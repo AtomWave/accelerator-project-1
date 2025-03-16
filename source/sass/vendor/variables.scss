@@ -1,0 +1,33 @@
+/* здесь используйте глобальные переменные */
+
+/* подключение шрифтов */
+$primary-font: "AlumniSans", "Arial", sans-serif;
+$secondary-font: "RobotoCondensed", "Arial", sans-serif;
+
+//Основные цвета
+$base-primary: #102654;
+$base-white: #ffffff;
+$additional-accent: #103aae;
+$additional-gradient: linear-gradient(45deg, #d10a42, #0041ca);
+
+//Цвет кнопок
+$additional-buttons: #1c3374;
+$tabs-color: #d10a42;
+$gradient-buttons: linear-gradient(45deg, #ed0233, #003eb7);
+
+//Фон
+$background-additional: #f8f9fc;
+$background-banners: #ed0233;
+$background-main-screen: linear-gradient(90deg, #003d85, #b80027);
+$background-footer: #030a1a;
+
+// Формы
+$primary-error: #ff121f;
+
+// Минимальная ширина страницы
+$minWidth: 320;
+
+// Брейкпоинты
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1366px;
