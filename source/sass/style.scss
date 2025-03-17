@@ -1,9 +1,20 @@
 // Vendor
+@import "vendor/normalize";
 // ---------------------------------
 
-@import "vendor/normalize";
-@import "vendor/null.scss";
-@import "vendor/mixins.scss";
+// Global
+@import "./global/variables";
+@import "./global/mixins";
+@import "./global/null";
+@import "./global/fonts";
+@import "./global/util";
+@import "./global/container";
+// ---------------------------------
 
-@import "vendor/fonts.scss";
+// Blocks
+@import "./blocks/hero";
+// ---------------------------------
 
+// Components
+@import "./components/button";
+// ---------------------------------

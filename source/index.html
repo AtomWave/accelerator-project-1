@@ -29,22 +29,60 @@
 
 <body class="page-body">
   <!-- пример использования спрайта -->
-  <img src="/__spritemap#sprite-logo-view" alt="Это спрайт" width="130" height="26">
+  <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт" width="130" height="26">
   <svg class="ticket__rouble" role="img" width="14" height="20" focusable="false" xmlns="http://www.w3.org/2000/svg">
     <use href="/__spritemap#sprite-ruble"></use>
-  </svg>
+  </svg> -->
   <!-- примеры требуемых атрибутов data-test="*" -->
-  <div data-test="hero">hero</div>
-  <div data-test="about">about</div>
-  <div data-test="price">price</div>
-  <div data-test="games">games</div>
-  <div data-test="juri">juri</div>
-  <div data-test="features">features</div>
-  <div data-test="offers">offers</div>
-  <div data-test="faq">faq</div>
-  <div data-test="reviews">reviews</div>
-  <div data-test="form">form</div>
-  <div data-test="footer">footer</div>
+  <div class="wrapper">
+
+    <div class="hero" data-test="hero">
+      <header class="hero__header">
+        <div class="hero__container container">
+          <div class="hero__row">
+            <div class="hero__logo">
+              <img src="/__spritemap#sprite-logo-view" alt="Логотип SUPERGYM" width="100" height="20">
+            </div>
+            <a class="hero__link" href="tel:88005555555">8 800 555-55-55</a>
+          </div>
+        </div>
+      </header>
+
+      <section class="hero__content">
+        <div class="hero__inner container">
+          <div class="hero__description">
+            <p>Омск</p>
+            <h1>Фитнес центр</h1>
+            <ul class="list-reset">
+              <li>Тренажёрный зал</li>
+              <li>Групповые занятия</li>
+              <li>Кардио-зона</li>
+            </ul>
+            <a class="hero__button button" href="#subscription">Купить абонемент</a>
+          </div>
+          <div class="hero__image">
+            <picture>
+              <source class="hero__image-source" type="image/webp" srcset="./img/hero-img-tablet.webp 1x, ./img/hero-img-tablet@2x.webp 2x" media="(max-width: 1365px)" width="324" height="390">
+              <source class="hero__image-source" type="image/webp" srcset="./img/hero-img.webp 1x, ./img/hero-img@2x.webp 2x" media="(min-width: 1366px)" width="500" height="524">
+              <source class="hero__image-source" type="image/jpeg" srcset="./img/hero-img-tablet.jpg 1x, ./img/hero-img-tablet@2x.jpg 2x" media="(max-width: 1365px)" width="324" height="390">
+              <img class="hero__image-desktop" src="./img/hero-img.jpg" alt="Фото тренера" srcset="./img/hero-img@2x.jpg 2x" width="500" height="524">
+            </picture>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div data-test="about">about</div>
+    <div data-test="price">price</div>
+    <div data-test="games">games</div>
+    <div data-test="juri">juri</div>
+    <div data-test="features">features</div>
+    <div data-test="offers">offers</div>
+    <div data-test="faq">faq</div>
+    <div data-test="reviews">reviews</div>
+    <div data-test="form">form</div>
+    <div data-test="footer">footer</div>
+  </div>
   <script src="js/main.js" type="module"></script>
 </body>
 
