@@ -56,4 +56,8 @@
   &:active {
     opacity: 0.5;
   }
+
+  @include vp-768 {
+    padding: 22px;
+  }
 }
