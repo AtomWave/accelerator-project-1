@@ -41,12 +41,19 @@
 }
 
 @mixin focus {
-  &.focus-visible:focus {
+  &:focus-visible {
     @content;
+  }
+
+  @supports not selector(:focus-visible) {
+    &:focus {
+      @content;
+    }
   }
 }
 
 @mixin active {
+  &:active,
   &.focus-visible:active {
     @content;
   }

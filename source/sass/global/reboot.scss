@@ -1,3 +1,7 @@
+html {
+  overflow: hidden;
+}
+
 html,
 body {
   height: 100%;
@@ -5,10 +9,13 @@ body {
 
 body {
   min-width: $minWidth + px;
+  font-family: $primary-font;
+  overflow-y: scroll; /* Обязательно для работы scrollbar-width в Firefox */
+  scrollbar-width: none; /* Скрытие полосы прокрутки в Firefox */
+}
 
-  &::-webkit-scrollbar {
-    display: none;
-  }
+body::-webkit-scrollbar {
+  display: none; /* Скрытие полосы прокрутки в Chrome, Safari, Edge */
 }
 
 img {

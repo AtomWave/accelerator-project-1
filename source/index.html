@@ -72,7 +72,64 @@
       </section>
     </div>
 
-    <div data-test="about">about</div>
+    <section class="gym" data-test="about">
+      <div class="gym__container container">
+        <div class="gym__text-wrapper">
+          <h2 class="gym__title">Тренажёрный зал</h2>
+          <p class="gym__subtitle">Просторный зал площадью 900 кв/м</p>
+          <div class="gym__text-info">
+            <p>
+              Supergym&nbsp;&mdash; самый большой фитнес центр
+              за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела
+              и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым
+              современным оборудованием для&nbsp;всех спортсменов.
+            </p>
+            <p>
+              В&nbsp;зале расположены отдельная зона для Crossfit
+              и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также
+              в&nbsp;фитнес центре есть несколько оборудованных залов
+              для&nbsp;различных видов групповых занятий.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="gym__media-wrapper">
+        <div class="gym__photo-wrapper">
+          <picture>
+            <source type="image/webp" media="(min-width: 1366px)" srcset="./img/main.webp 1x, ./img/main@2x.webp 2x" width="660" height="400">
+            <source type="image/webp" media="(min-width: 768px)" srcset="./img/main-tablet.webp 1x, ./img/main-tablet@2x.webp 2x" width="678" height="345">
+            <source type="image/webp" srcset="./img/main-mobile.webp 1x, ./img/main-mobile@2x.webp 2x" width="320" height="280">
+            <source type="image/jpeg" media="(min-width: 1366px)" srcset="./img/main.jpg 1x, ./img/main@2x.jpg 2x" width="660" height="401">
+            <source type="image/jpeg" media="(min-width: 768px)" srcset="./img/main-tablet.jpg 1x, ./img/main-tablet@2x.jpg 2x" width="678" height="345">
+            <source type="image/jpeg" srcset="./img/main-mobile.jpg 1x, ./img/main-mobile@2x.jpg 2x" width="320" height="280">
+            <img src="./img/main.jpg" alt="Светлый, спортивный зал. По двум стенам зеркала в полный рост. Видны ряды разного рода спортивных тренажеров" width="660" height="400">
+          </picture>
+        </div>
+        <div class="gym__video-wrapper" id="player">
+          <div class="gym__poster-wrapper">
+            <picture>
+              <source type="image/webp" media="(min-width: 1366px)" srcset="./img/video-poster-desktop.webp 1x, ./img/video-poster-desktop@2x.webp 2x" width="360" height="230">
+              <source type="image/webp" media="(min-width: 768px)" srcset="./img/video-poster-tablet.webp 1x, ./img/video-poster-tablet@2x.webp 2x" width="270" height="170">
+              <source type="image/webp" srcset="./img/video-poster-mobile.webp 1x, ./img/video-poster-mobile@2x.webp 2x" width="320" height="170">
+              <source type="image/jpeg" media="(min-width: 1200px)" srcset="./img/video-poster-desktop.jpg 1x, ./img/video-poster-desktop@2x.jpg 2x" width="360" height="230">
+              <source type="image/jpeg" media="(min-width: 768px)" srcset="./img/video-poster-tablet.jpg 1x, ./img/video-poster-tablet@2x.jpg 2x" width="270" height="170">
+              <source type="image/jpeg" srcset="./img/video-poster-mobile.jpg 1x, ./img/video-poster-mobile@2x.jpg 2x" width="320" height="170">
+              <img src="./img/video-poster-desktop.jpg" alt="Светлый, спортивный зал. По двум стенам зеркала в полный рост. Видны ряды разного рода спортивных тренажеров" width="364" height="228">
+            </picture>
+            <button class="gym__play-button btn" type="button">
+              <span class="visually-hidden">Запустить видео</span>
+              <svg width="17" height="17" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <use href="/__spritemap#sprite-play"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="gym__iframe-wrapper" hidden>
+            <iframe class="video__player" title="YouTube video player" data-src="https://www.youtube.com/embed/9TZXsZItgdw?mute=1" loading="lazy" width="364" height="228" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <div data-test="price">price</div>
     <div data-test="games">games</div>
     <div data-test="juri">juri</div>

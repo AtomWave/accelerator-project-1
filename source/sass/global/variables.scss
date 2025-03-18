@@ -7,6 +7,8 @@ $secondary-font: "Roboto Condensed", "Arial", sans-serif;
 //Основные цвета
 $base-primary: #102654;
 $base-white: #ffffff;
+$base-white-opacity: rgba(255, 255, 255, 0.8);
+$base-black: #000000;
 $additional-accent: #103aae;
 $additional-gradient: linear-gradient(45deg, #d10a42, #0041ca);
 $hero-gradient: linear-gradient(
@@ -22,6 +24,10 @@ $hero-gradient: linear-gradient(
 $additional-buttons: #1c3374;
 $tabs-color: #d10a42;
 $gradient-buttons: linear-gradient(45deg, #ed0233, #003eb7);
+$play-button-gradient: linear-gradient(100deg, #ed0233 0%, #003eb7 100%);
+$stroke-play-btn: rgba(237, 2, 51, 0.2);
+$stroke-play-btn-hover: rgba(16, 38, 84, 0.6);
+$stroke-play-btn-focus: #c8c9cc;
 
 //Фон
 $background-additional: #f8f9fc;

@@ -5,16 +5,18 @@
 // Global
 @import "./global/variables";
 @import "./global/mixins";
-@import "./global/null";
 @import "./global/fonts";
+@import "./global/reboot";
 @import "./global/util";
 @import "./global/container";
 // ---------------------------------
 
 // Blocks
 @import "./blocks/hero";
+@import "./blocks/gym";
 // ---------------------------------
 
 // Components
 @import "./components/button";
+@import "./components/btn";
 // ---------------------------------
