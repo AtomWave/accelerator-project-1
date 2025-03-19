@@ -1,0 +1,150 @@
+.subscription-card {
+  font-family: $secondary-font;
+  color: $base-primary;
+  padding: 44px 20px 44px;
+  max-width: 347px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $base-white;
+
+  &::after {
+    width: calc(100% + 14px);
+    height: calc(100% + 14px);
+    position: absolute;
+    content: "";
+    top: -7px;
+    left: -7px;
+    background-color: $base-white;
+    z-index: -1;
+  }
+
+  @include hover {
+    &::after {
+      background: $card-gradient;
+    }
+  }
+
+  @include focus {
+    outline: none;
+    &::after {
+      background: $card-gradient;
+    }
+  }
+
+  @include vp-768 {
+    max-width: 380px;
+    padding: 58px 20px 58px;
+  }
+}
+
+.subscription-card__header {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 100%;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 18px;
+
+  @include vp-768 {
+    font-size: 24px;
+    margin-bottom: 22px;
+  }
+
+  @include vp-1366 {
+    font-size: 26px;
+    margin-bottom: 17px;
+  }
+}
+
+.subscription-card__subtitle {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 157%;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 64px;
+
+  @include vp-768 {
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 82px;
+  }
+
+  @include vp-1366 {
+    margin-bottom: 77px;
+  }
+}
+
+.subscription-card__price {
+  position: relative;
+  display: flex;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 150%;
+  align-items: center;
+  color: $additional-accent;
+  margin: 0;
+  margin-bottom: 19px;
+
+  svg {
+    flex-shrink: 0;
+    position: relative;
+    width: 24px;
+    height: 33px;
+    z-index: 2;
+
+    @include vp-768 {
+      width: 30px;
+      height: 42px;
+    }
+  }
+
+  span {
+    position: relative;
+    margin-right: 10px;
+    z-index: 2;
+
+    @include vp-768 {
+      margin-right: 14px;
+    }
+
+    @include vp-1366 {
+    }
+  }
+
+  &::before {
+    position: absolute;
+    content: attr(data-price);
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 120px;
+    opacity: 0.48;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: $price-shadow;
+
+    @include vp-768 {
+      font-size: 100px;
+      line-height: 150px;
+    }
+
+    @include vp-1366 {
+    }
+  }
+
+  // .subscription-card__price @media
+  @include vp-768 {
+    font-size: 60px;
+    margin-bottom: 22px;
+  }
+
+  @include vp-1366 {
+    margin-bottom: 17px;
+  }
+}
+
+.subscription-card__button {
+}

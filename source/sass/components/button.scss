@@ -65,15 +65,7 @@
     }
   }
 
-  &--secondary {
-    padding: 22px 0 23px 0;
-    color: $base-primary;
-
-    &::after {
-      border: 3px solid $base-primary;
-    }
-  }
-
+  // .button @media
   @include vp-768 {
     padding: 22px;
   }
@@ -81,5 +73,60 @@
   @include vp-1366 {
     padding: 27px;
   }
-}
 
+  &--secondary {
+    width: 206px;
+    color: $base-primary;
+    padding: 27px;
+
+    &::after {
+      border-color: $base-primary;
+    }
+
+    @include hover {
+      background: $button-gradient;
+      color: $base-white;
+      &::after {
+        border-color: transparent;
+      }
+    }
+
+    @include focus {
+      outline: none;
+      outline-offset: 0;
+      color: $base-white;
+      background: $button-gradient-focus;
+      &::after {
+        border-color: $base-black;
+      }
+    }
+
+    @include active {
+      outline: none;
+      background: $button-gradient;
+      color: $base-white-opacity-7;
+      &::after {
+        border-color: transparent;
+      }
+    }
+
+    @include disabled {
+      opacity: 0.3;
+      background: transparent;
+      color: $base-primary;
+      &::after {
+        border-color: $base-primary;
+      }
+    }
+
+    // .button--secondary @media
+    @include vp-768 {
+      padding: 27px;
+      width: 250px;
+    }
+
+    @include vp-1366 {
+      width: 230px;
+    }
+  }
+}

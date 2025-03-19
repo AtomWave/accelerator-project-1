@@ -1,19 +1,15 @@
 .wrapper {
   position: relative;
-
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  /* stylelint-disable-next-line */
-  min-height: calc(100 * var(--vh, 1vh));
-  min-width: 320px;
+  min-height: 100%;
 
-  .header,
-  .footer {
+  .page-body__hero,
+  .page-body__footer {
     flex-shrink: 0;
   }
 
-  main {
+  .page-body__main {
     flex-grow: 1;
   }
 }

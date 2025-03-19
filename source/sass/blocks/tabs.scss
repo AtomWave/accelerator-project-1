@@ -1,0 +1,152 @@
+.tabs {
+  display: flex;
+  flex-direction: column;
+
+  @include vp-768 {
+    align-items: center;
+  }
+}
+
+.tabs__controls {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-self: center;
+  position: relative;
+  row-gap: 15px;
+  padding-bottom: 2px;
+  margin-bottom: 1px;
+
+  &::after {
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    background-color: $border-bottom-color;
+
+    @include vp-768 {
+      bottom: -1px;
+    }
+
+    @include vp-1366 {
+      bottom: -3px;
+    }
+  }
+}
+
+.tabs__control {
+  margin: 0 46px 0 0;
+  padding: 5px 0;
+  display: block;
+  flex-shrink: 0;
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: $base-primary-opacity;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  position: relative;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &::after {
+    display: none;
+    width: 99%;
+    height: 2px;
+    position: absolute;
+    content: "";
+    bottom: -2px;
+    left: 0;
+    background-color: $tabs-color;
+
+    @include vp-768 {
+      bottom: -3px;
+    }
+
+    @include vp-1366 {
+      bottom: -5px;
+    }
+  }
+
+  &.is-active {
+    pointer-events: none;
+    color: $base-primary;
+
+    &::after {
+      display: block;
+
+      @include vp-768 {
+      }
+    }
+  }
+
+  @include hover {
+    color: $tabs-hover;
+    &::after {
+      display: block;
+      background-color: $tabs-stroke-hover;
+    }
+  }
+
+  @include focus {
+    outline: none;
+    outline-offset: 0;
+    color: $base-primary;
+
+    &::after {
+      display: block;
+      background-color: $base-primary;
+    }
+  }
+
+  @include active {
+    outline: none;
+    color: $base-primary;
+
+    &::after {
+      display: block;
+      background-color: $tabs-color;
+    }
+  }
+
+  @include disabled {
+    color: $base-primary;
+    opacity: 0.3;
+    &::after {
+      display: block;
+      background-color: $base-primary;
+      opacity: 0.3;
+    }
+  }
+
+  // .tabs__control @media
+
+  @include vp-768 {
+    font-size: 18px;
+    margin-right: 44px;
+  }
+
+  @include vp-1366 {
+    font-size: 20px;
+    margin-right: 51px;
+  }
+}
+
+.tabs__content {
+}
+
+.tabs__element {
+  display: none;
+
+  &.is-active {
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: 5;
+  }
+}

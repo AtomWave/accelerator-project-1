@@ -1,40 +1,40 @@
-.btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  border: none;
-  outline-offset: 8px;
-  outline: 2px solid $stroke-play-btn;
-  background: $play-button-gradient;
-  color: $base-white;
+// .btn {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   width: 52px;
+//   height: 52px;
+//   border-radius: 50%;
+//   border: none;
+//   outline-offset: 8px;
+//   outline: 2px solid $stroke-play-btn;
+//   background: $play-button-gradient;
+//   color: $base-white;
 
-  @include hover {
-    background: $base-white;
-    color: $stroke-play-btn-hover;
-    outline-color: $stroke-play-btn-hover;
-  }
+//   @include hover {
+//     background: $base-white;
+//     color: $stroke-play-btn-hover;
+//     outline-color: $stroke-play-btn-hover;
+//   }
 
-  @include focus {
-    background: $stroke-play-btn-focus;
-    color: $base-primary;
-    outline-color: $base-primary;
-  }
+//   @include focus {
+//     background: $stroke-play-btn-focus;
+//     color: $base-primary;
+//     outline-color: $base-primary;
+//   }
 
-  @include active {
-    background: $base-white;
-    color: $base-primary;
-    outline-color: $base-primary;
-  }
+//   @include active {
+//     background: $base-white;
+//     color: $base-primary;
+//     outline-color: $base-primary;
+//   }
 
-  &.disabled {
-    opacity: 0.4;
-    background: $base-white;
-    color: $base-primary;
-    outline-color: $base-primary;
-    cursor: not-allowed;
-  }
-}
+//   &.disabled {
+//     opacity: 0.4;
+//     background: $base-white;
+//     color: $base-primary;
+//     outline-color: $base-primary;
+//     cursor: not-allowed;
+//   }
+// }

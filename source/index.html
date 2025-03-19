@@ -1,146 +1,284 @@
 <!DOCTYPE html>
 <html lang="ru" data-validate="html">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Фитнес центр Supergym.">
-  <link type="image/svg+xml" href="./public/favicon/favicon.svg" rel="icon">
-  <link type="image/png" href="./public/favicon/android-icon-192x192.png" rel="icon" sizes="192x192">
-  <link type="image/png" href="./public/favicon/favicon-32x32.png" rel="icon" sizes="32x32">
-  <link type="image/png" href="./public/favicon/favicon-96x96.png" rel="icon" sizes="96x96">
-  <link type="image/png" href="./public/favicon/favicon-16x16.png" rel="icon" sizes="16x16">
-  <link href="./public/favicon/apple-icon-57x57.png" rel="apple-touch-icon" sizes="57x57">
-  <link href="./public/favicon/apple-icon-60x60.png" rel="apple-touch-icon" sizes="60x60">
-  <link href="./public/favicon/apple-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
-  <link href="./public/favicon/apple-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
-  <link href="./public/favicon/apple-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
-  <link href="./public/favicon/apple-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
-  <link href="./public/favicon/apple-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
-  <link href="./public/favicon/apple-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
-  <link href="./public/favicon/apple-icon-180x180.png" rel="apple-touch-icon" sizes="180x180">
-  <link href="./site.webmanifest" rel="manifest">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="./public/favicon/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
-  <title>SUPERGYM</title>
-  <link href="sass/style.scss" rel="stylesheet">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Фитнес центр Supergym.">
+    <link type="image/svg+xml" href="./public/favicon/favicon.svg" rel="icon">
+    <link type="image/png" href="./public/favicon/android-icon-192x192.png" rel="icon" sizes="192x192">
+    <link type="image/png" href="./public/favicon/favicon-32x32.png" rel="icon" sizes="32x32">
+    <link type="image/png" href="./public/favicon/favicon-96x96.png" rel="icon" sizes="96x96">
+    <link type="image/png" href="./public/favicon/favicon-16x16.png" rel="icon" sizes="16x16">
+    <link href="./public/favicon/apple-icon-57x57.png" rel="apple-touch-icon" sizes="57x57">
+    <link href="./public/favicon/apple-icon-60x60.png" rel="apple-touch-icon" sizes="60x60">
+    <link href="./public/favicon/apple-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+    <link href="./public/favicon/apple-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
+    <link href="./public/favicon/apple-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+    <link href="./public/favicon/apple-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
+    <link href="./public/favicon/apple-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
+    <link href="./public/favicon/apple-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
+    <link href="./public/favicon/apple-icon-180x180.png" rel="apple-touch-icon" sizes="180x180">
+    <link href="./site.webmanifest" rel="manifest">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./public/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>SUPERGYM</title>
+    <link href="sass/style.scss" rel="stylesheet">
+  </head>
 
-<body class="page-body">
-  <!-- пример использования спрайта -->
-  <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт" width="130" height="26">
+  <body class="page-body">
+    <!-- пример использования спрайта -->
+    <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт" width="130" height="26">
   <svg class="ticket__rouble" role="img" width="14" height="20" focusable="false" xmlns="http://www.w3.org/2000/svg">
     <use href="/__spritemap#sprite-ruble"></use>
   </svg> -->
-  <!-- примеры требуемых атрибутов data-test="*" -->
-  <div class="wrapper">
+    <!-- примеры требуемых атрибутов data-test="*" -->
+    <div class="wrapper">
 
-    <div class="hero" data-test="hero">
-      <header class="hero__header">
-        <div class="hero__container container">
-          <div class="hero__row">
-            <div class="hero__logo">
-              <img src="/__spritemap#sprite-logo-view" alt="Логотип SUPERGYM" width="130" height="26">
+      <div class="page-body__hero hero" data-test="hero">
+        <header class="hero__header">
+          <div class="hero__container container">
+            <div class="hero__row">
+              <div class="hero__logo">
+                <img src="/__spritemap#sprite-logo-view" alt="Логотип SUPERGYM" width="130" height="26">
+              </div>
+              <a class="hero__link" href="tel:88005555555">8 800 555-55-55</a>
             </div>
-            <a class="hero__link" href="tel:88005555555">8 800 555-55-55</a>
           </div>
-        </div>
-      </header>
+        </header>
 
-      <section class="hero__content">
-        <div class="hero__inner container">
-          <div class="hero__description">
-            <p>Омск</p>
-            <h1>Фитнес центр</h1>
-            <ul class="list-reset">
-              <li>Тренажёрный зал</li>
-              <li>Групповые занятия</li>
-              <li>Кардио-зона</li>
-            </ul>
-            <a class="hero__button button" href="#subscription">Купить абонемент</a>
+        <section class="hero__content">
+          <div class="hero__inner container">
+            <div class="hero__description">
+              <p>Омск</p>
+              <h1>Фитнес центр</h1>
+              <ul class="list-reset">
+                <li>Тренажёрный зал</li>
+                <li>Групповые занятия</li>
+                <li>Кардио-зона</li>
+              </ul>
+              <a class="hero__button button" href="#subscription">Купить абонемент</a>
+            </div>
+            <div class="hero__image">
+              <picture>
+                <source class="hero__image-source" type="image/webp" srcset="./img/hero-img-tablet.webp 1x, ./img/hero-img-tablet@2x.webp 2x" media="(max-width: 1365px)" width="324" height="390">
+                <source class="hero__image-source" type="image/webp" srcset="./img/hero-img.webp 1x, ./img/hero-img@2x.webp 2x" media="(min-width: 1366px)" width="500" height="524">
+                <source class="hero__image-source" type="image/jpeg" srcset="./img/hero-img-tablet.jpg 1x, ./img/hero-img-tablet@2x.jpg 2x" media="(max-width: 1365px)" width="324" height="390">
+                <img class="hero__image-desktop" src="./img/hero-img.jpg" alt="Фото тренера" srcset="./img/hero-img@2x.jpg 2x" width="500" height="524">
+              </picture>
+            </div>
           </div>
-          <div class="hero__image">
-            <picture>
-              <source class="hero__image-source" type="image/webp" srcset="./img/hero-img-tablet.webp 1x, ./img/hero-img-tablet@2x.webp 2x" media="(max-width: 1365px)" width="324" height="390">
-              <source class="hero__image-source" type="image/webp" srcset="./img/hero-img.webp 1x, ./img/hero-img@2x.webp 2x" media="(min-width: 1366px)" width="500" height="524">
-              <source class="hero__image-source" type="image/jpeg" srcset="./img/hero-img-tablet.jpg 1x, ./img/hero-img-tablet@2x.jpg 2x" media="(max-width: 1365px)" width="324" height="390">
-              <img class="hero__image-desktop" src="./img/hero-img.jpg" alt="Фото тренера" srcset="./img/hero-img@2x.jpg 2x" width="500" height="524">
-            </picture>
+        </section>
+      </div>
+      <main class="page-body__main main">
+
+        <section class="main__gym gym" data-test="about">
+          <div class="gym__container container">
+            <div class="gym__text-wrapper">
+              <h2 class="gym__title">Тренажёрный зал</h2>
+              <p class="gym__subtitle">Просторный зал площадью 900 кв/м</p>
+              <div class="gym__text-info">
+                <p>
+                  Supergym&nbsp;&mdash; самый большой фитнес центр
+                  за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела
+                  и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым
+                  современным оборудованием для&nbsp;всех спортсменов.
+                </p>
+                <p>
+                  В&nbsp;зале расположены отдельная зона для Crossfit
+                  и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также
+                  в&nbsp;фитнес центре есть несколько оборудованных залов
+                  для&nbsp;различных видов групповых занятий.
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
+          <div class="gym__media-wrapper">
+            <div class="gym__photo-wrapper">
+              <picture>
+                <source type="image/webp" media="(min-width: 1366px)" srcset="./img/main.webp 1x, ./img/main@2x.webp 2x" width="660" height="400">
+                <source type="image/webp" media="(min-width: 768px)" srcset="./img/main-tablet.webp 1x, ./img/main-tablet@2x.webp 2x" width="678" height="345">
+                <source type="image/webp" srcset="./img/main-mobile.webp 1x, ./img/main-mobile@2x.webp 2x" width="320" height="280">
+                <source type="image/jpeg" media="(min-width: 1366px)" srcset="./img/main.jpg 1x, ./img/main@2x.jpg 2x" width="660" height="401">
+                <source type="image/jpeg" media="(min-width: 768px)" srcset="./img/main-tablet.jpg 1x, ./img/main-tablet@2x.jpg 2x" width="678" height="345">
+                <source type="image/jpeg" srcset="./img/main-mobile.jpg 1x, ./img/main-mobile@2x.jpg 2x" width="320" height="280">
+                <img src="./img/main.jpg" alt="Светлый, спортивный зал. По двум стенам зеркала в полный рост. Видны ряды разного рода спортивных тренажеров" width="660" height="400">
+              </picture>
+            </div>
+            <div class="gym__video-wrapper" id="player">
+              <div class="gym__poster-wrapper">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1366px)" srcset="./img/video-poster-desktop.webp 1x, ./img/video-poster-desktop@2x.webp 2x" width="360" height="230">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="./img/video-poster-tablet.webp 1x, ./img/video-poster-tablet@2x.webp 2x" width="270" height="170">
+                  <source type="image/webp" srcset="./img/video-poster-mobile.webp 1x, ./img/video-poster-mobile@2x.webp 2x" width="320" height="170">
+                  <source type="image/jpeg" media="(min-width: 1200px)" srcset="./img/video-poster-desktop.jpg 1x, ./img/video-poster-desktop@2x.jpg 2x" width="360" height="230">
+                  <source type="image/jpeg" media="(min-width: 768px)" srcset="./img/video-poster-tablet.jpg 1x, ./img/video-poster-tablet@2x.jpg 2x" width="270" height="170">
+                  <source type="image/jpeg" srcset="./img/video-poster-mobile.jpg 1x, ./img/video-poster-mobile@2x.jpg 2x" width="320" height="170">
+                  <img src="./img/video-poster-desktop.jpg" alt="Светлый, спортивный зал. По двум стенам зеркала в полный рост. Видны ряды разного рода спортивных тренажеров" width="364" height="228">
+                </picture>
+                <button class="gym__play-button" type="button">
+                  <span class="visually-hidden">Запустить видео</span>
+                  <svg width="17" height="17" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                    <use href="/__spritemap#sprite-play"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="gym__iframe-wrapper" hidden>
+                <iframe class="video__player" title="YouTube video player" data-src="https://www.youtube.com/embed/9TZXsZItgdw?mute=1" loading="lazy" width="364" height="228" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="subscription" id="subscription" data-test="price">
+          <div class="subscription__container container">
+            <h2 class="subscription__title">Абонементы</h2>
+            <div class="subscription__tabs tabs" data-tabs="parent" data-delay="300" data-height="max">
+              <div class="subscription__controls tabs__controls" data-tabs="controls">
+                <button class="tabs__control" type="button" data-tabs="control" data-content="1">1 месяц</button>
+                <button class="tabs__control" type="button" data-tabs="control" data-content="6">6 месяцев</button>
+                <button class="tabs__control" type="button" data-tabs="control" data-content="12">12 месяцев</button>
+              </div>
+              <ul class="subscription__content tabs__content list-reset" data-tabs="content">
+                <li class="subscription__list tabs__element" data-tabs="element" data-element-content="1">
+                  <ul class="subscription__items list-reset">
+                    <li class="subscription__item subscription-card">
+                      <header class="subscription-card__header">С тренером</header>
+                      <p class="subscription-card__subtitle">12 занятий</p>
+                      <p class="subscription-card__price" data-price="5000">
+                        <span>5000</span>
+                        <svg width="30" height="42">
+                          <use href="/__spritemap#sprite-ruble"></use>
+                        </svg>
+                      </p>
+                      <a class="subscription-card__button button button--secondary" href="#">Купить абонемент</a>
+                    </li>
+                    <li class="subscription__item subscription-card">
+                      <header class="subscription-card__header">Дневной</header>
+                      <p class="subscription-card__subtitle">С 8:00 до 17:00</p>
+                      <p class="subscription-card__price" data-price="1700">
+                        <span>1700</span>
+                        <svg width="30" height="42">
+                          <use href="/__spritemap#sprite-ruble"></use>
+                        </svg>
+                      </p>
+                      <a class="subscription-card__button button button--secondary" href="#">Купить абонемент</a>
+                    </li>
+                    <li class="subscription__item subscription-card">
+                      <header class="subscription-card__header">Полный день</header>
+                      <p class="subscription-card__subtitle">С 8:00 до 22:00</p>
+                      <p class="subscription-card__price" data-price="2700">
+                        <span>2700</span>
+                        <svg width="30" height="42">
+                          <use href="/__spritemap#sprite-ruble"></use>
+                        </svg>
+                      </p>
+                      <a class="subscription-card__button button button--secondary" href="#">Купить абонемент</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="subscription__list tabs__element" data-tabs="element" data-element-content="6">
+                  <ul class="subscription__items list-reset">
+                    <li class="subscription__item subscription-card">
+                      <header class="subscription-card__header">С тренером</header>
+                      <p class="subscription-card__subtitle">72 занятия</p>
+                      <p class="subscription-card__price" data-price="30000">
+                        <span>30000</span>
+                        <svg width="30" height="42">
+                          <use href="/__spritemap#sprite-ruble"></use>
+                        </svg>
+                      </p>
+                      <a class="subscription-card__button button button--secondary" href="#">Купить абонемент</a>
+                    </li>
+                    <li class="subscription__item subscription-card">
+                      <header class="subscription-card__header">Дневной</header>
+                      <p class="subscription-card__subtitle">С 8:00 до 17:00</p>
+                      <p class="subscription-card__price" data-price="10200">
+                        <span>10200</span>
+                        <svg width="30" height="42">
+                          <use href="/__spritemap#sprite-ruble"></use>
+                        </svg>
+                      </p>
+                      <a class="subscription-card__button button button--secondary" href="#">Купить абонемент</a>
+                    </li>
+                    <li class="subscription__item subscription-card">
+                      <header class="subscription-card__header">Полный день</header>
+                      <p class="subscription-card__subtitle">С 8:00 до 22:00</p>
+                      <p class="subscription-card__price" data-price="16200">
+                        <span>16200</span>
+                        <svg width="30" height="42">
+                          <use href="/__spritemap#sprite-ruble"></use>
+                        </svg>
+                      </p>
+                      <a class="subscription-card__button button button--secondary" href="#">Купить абонемент</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="subscription__list tabs__element" data-tabs="element" data-element-content="12">
+                  <ul class="subscription__items list-reset">
+                    <li class="subscription__item subscription-card">
+                      <header class="subscription-card__header">С тренером</header>
+                      <p class="subscription-card__subtitle">144 занятия</p>
+                      <p class="subscription-card__price" data-price="60000">
+                        <span>60000</span>
+                        <svg width="30" height="42">
+                          <use href="/__spritemap#sprite-ruble"></use>
+                        </svg>
+                      </p>
+                      <a class="subscription-card__button button button--secondary" href="#">Купить абонемент</a>
+                    </li>
+                    <li class="subscription__item subscription-card">
+                      <header class="subscription-card__header">Дневной</header>
+                      <p class="subscription-card__subtitle">С 8:00 до 17:00</p>
+                      <p class="subscription-card__price" data-price="20400">
+                        <span>20400</span>
+                        <svg width="30" height="42">
+                          <use href="/__spritemap#sprite-ruble"></use>
+                        </svg>
+                      </p>
+                      <a class="subscription-card__button button button--secondary" href="#">Купить абонемент</a>
+                    </li>
+                    <li class="subscription__item subscription-card">
+                      <header class="subscription-card__header">Полный день</header>
+                      <p class="subscription-card__subtitle">С 8:00 до 22:00</p>
+                      <p class="subscription-card__price" data-price="32400">
+                        <span>32400</span>
+                        <svg width="30" height="42">
+                          <use href="/__spritemap#sprite-ruble"></use>
+                        </svg>
+                      </p>
+                      <a class="subscription-card__button button button--secondary" href="#">Купить абонемент</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="subscription__image-wrapper">
+              <picture>
+                <source type="image/webp" media="(min-width: 1366px)" srcset="./img/barbell-plates.webp, ./img/barbell-plates@2x.webp 2x" width="470" height="494">
+                <source type="image/webp" media="(min-width: 768px)" srcset="./img/barbell-plates-tablet.webp, ./img/barbell-plates-tablet@2x.webp 2x" width="470" height="494">
+                <img src="./img/barbell-plates.png" alt="" width="470" height="494" loading="lazy">
+              </picture>
+            </div>
+          </div>
+        </section>
+
+        <div data-test="price">price</div>
+        <div data-test="games">games</div>
+        <div data-test="juri">juri</div>
+        <div data-test="features">features</div>
+        <div data-test="offers">offers</div>
+        <div data-test="faq">faq</div>
+        <div data-test="reviews">reviews</div>
+        <div data-test="form">form</div>
+      </main>
+
+      <footer class="page-body__footer footer" data-test="footer">footer</footer>
     </div>
-
-    <section class="gym" data-test="about">
-      <div class="gym__container container">
-        <div class="gym__text-wrapper">
-          <h2 class="gym__title">Тренажёрный зал</h2>
-          <p class="gym__subtitle">Просторный зал площадью 900 кв/м</p>
-          <div class="gym__text-info">
-            <p>
-              Supergym&nbsp;&mdash; самый большой фитнес центр
-              за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела
-              и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым
-              современным оборудованием для&nbsp;всех спортсменов.
-            </p>
-            <p>
-              В&nbsp;зале расположены отдельная зона для Crossfit
-              и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также
-              в&nbsp;фитнес центре есть несколько оборудованных залов
-              для&nbsp;различных видов групповых занятий.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="gym__media-wrapper">
-        <div class="gym__photo-wrapper">
-          <picture>
-            <source type="image/webp" media="(min-width: 1366px)" srcset="./img/main.webp 1x, ./img/main@2x.webp 2x" width="660" height="400">
-            <source type="image/webp" media="(min-width: 768px)" srcset="./img/main-tablet.webp 1x, ./img/main-tablet@2x.webp 2x" width="678" height="345">
-            <source type="image/webp" srcset="./img/main-mobile.webp 1x, ./img/main-mobile@2x.webp 2x" width="320" height="280">
-            <source type="image/jpeg" media="(min-width: 1366px)" srcset="./img/main.jpg 1x, ./img/main@2x.jpg 2x" width="660" height="401">
-            <source type="image/jpeg" media="(min-width: 768px)" srcset="./img/main-tablet.jpg 1x, ./img/main-tablet@2x.jpg 2x" width="678" height="345">
-            <source type="image/jpeg" srcset="./img/main-mobile.jpg 1x, ./img/main-mobile@2x.jpg 2x" width="320" height="280">
-            <img src="./img/main.jpg" alt="Светлый, спортивный зал. По двум стенам зеркала в полный рост. Видны ряды разного рода спортивных тренажеров" width="660" height="400">
-          </picture>
-        </div>
-        <div class="gym__video-wrapper" id="player">
-          <div class="gym__poster-wrapper">
-            <picture>
-              <source type="image/webp" media="(min-width: 1366px)" srcset="./img/video-poster-desktop.webp 1x, ./img/video-poster-desktop@2x.webp 2x" width="360" height="230">
-              <source type="image/webp" media="(min-width: 768px)" srcset="./img/video-poster-tablet.webp 1x, ./img/video-poster-tablet@2x.webp 2x" width="270" height="170">
-              <source type="image/webp" srcset="./img/video-poster-mobile.webp 1x, ./img/video-poster-mobile@2x.webp 2x" width="320" height="170">
-              <source type="image/jpeg" media="(min-width: 1200px)" srcset="./img/video-poster-desktop.jpg 1x, ./img/video-poster-desktop@2x.jpg 2x" width="360" height="230">
-              <source type="image/jpeg" media="(min-width: 768px)" srcset="./img/video-poster-tablet.jpg 1x, ./img/video-poster-tablet@2x.jpg 2x" width="270" height="170">
-              <source type="image/jpeg" srcset="./img/video-poster-mobile.jpg 1x, ./img/video-poster-mobile@2x.jpg 2x" width="320" height="170">
-              <img src="./img/video-poster-desktop.jpg" alt="Светлый, спортивный зал. По двум стенам зеркала в полный рост. Видны ряды разного рода спортивных тренажеров" width="364" height="228">
-            </picture>
-            <button class="gym__play-button btn" type="button">
-              <span class="visually-hidden">Запустить видео</span>
-              <svg width="17" height="17" focusable="false" xmlns="http://www.w3.org/2000/svg">
-                <use href="/__spritemap#sprite-play"></use>
-              </svg>
-            </button>
-          </div>
-          <div class="gym__iframe-wrapper" hidden>
-            <iframe class="video__player" title="YouTube video player" data-src="https://www.youtube.com/embed/9TZXsZItgdw?mute=1" loading="lazy" width="364" height="228" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div data-test="price">price</div>
-    <div data-test="games">games</div>
-    <div data-test="juri">juri</div>
-    <div data-test="features">features</div>
-    <div data-test="offers">offers</div>
-    <div data-test="faq">faq</div>
-    <div data-test="reviews">reviews</div>
-    <div data-test="form">form</div>
-    <div data-test="footer">footer</div>
-  </div>
-  <script src="js/main.js" type="module"></script>
-</body>
+    <script src="js/main.js" type="module"></script>
+  </body>
 
 </html>

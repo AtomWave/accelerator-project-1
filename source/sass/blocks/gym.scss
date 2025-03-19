@@ -8,7 +8,7 @@
   @include vp-1366 {
     display: flex;
     max-width: 1366px;
-    padding: 120px 103px 240px;
+    padding: 120px 103px 207px;
     margin: 0px auto;
     gap: 145px;
   }
@@ -163,6 +163,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: none;
+  outline-offset: 8px;
+  outline: 2px solid $stroke-play-btn;
+  background: $play-button-gradient;
+  color: $base-white;
 
   svg {
     width: 12px;
@@ -170,6 +182,32 @@
 
     @include vp-1366 {
     }
+  }
+
+  @include hover {
+    background: $base-white;
+    color: $stroke-play-btn-hover;
+    outline-color: $stroke-play-btn-hover;
+  }
+
+  @include focus {
+    background: $stroke-play-btn-focus;
+    color: $base-primary;
+    outline-color: $base-primary;
+  }
+
+  @include active {
+    background: $base-white;
+    color: $base-primary;
+    outline-color: $base-primary;
+  }
+
+  &.disabled {
+    opacity: 0.4;
+    background: $base-white;
+    color: $base-primary;
+    outline-color: $base-primary;
+    cursor: not-allowed;
   }
 }
 

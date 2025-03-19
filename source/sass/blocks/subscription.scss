@@ -1,0 +1,113 @@
+.subscription {
+  padding: 40px 0 47px;
+  background-color: $background-additional;
+
+  @include vp-768 {
+    padding: 60px 0 67px;
+  }
+
+  @include vp-1366 {
+    padding: 100px 0 107px;
+  }
+}
+
+.subscription__container {
+}
+
+.subscription__title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 100%;
+  text-align: center;
+  color: #102654;
+  margin: 0;
+  margin-bottom: 27px;
+
+  @include vp-768 {
+    font-size: 42px;
+    margin-bottom: 31px;
+  }
+
+  @include vp-1366 {
+    font-size: 54px;
+    margin-bottom: 15px;
+  }
+}
+
+.subscription__tabs {
+}
+
+.subscription__controls {
+}
+
+.subscription__content {
+  padding-top: 35px;
+
+  @include vp-768 {
+    padding-top: 52px;
+    width: 100%;
+  }
+
+  @include vp-1366 {
+    padding-top: 49px;
+  }
+}
+
+.subscription__list {
+}
+
+.subscription__items {
+  padding: 0 7px;
+
+  @include vp-768 {
+    margin: 0 auto;
+    max-width: 380px;
+  }
+
+  @include vp-1366 {
+    display: flex;
+    justify-content: center;
+    gap: 54px;
+    margin: 0;
+    // padding: 0;
+    max-width: 100%;
+  }
+}
+
+.subscription__item {
+  @include vp-1366 {
+    width: 360px;
+  }
+}
+
+.subscription__item:not(:last-child) {
+  margin-bottom: 49px;
+
+  @include vp-768 {
+    margin-bottom: 54px;
+  }
+
+  @include vp-1366 {
+    margin-bottom: 0;
+  }
+}
+
+.subscription__image-wrapper {
+  display: none;
+
+  @include vp-768 {
+    display: block;
+    position: absolute;
+    bottom: 214px;
+    right: 0;
+    width: 325px;
+    height: 340px;
+  }
+
+  @include vp-1366 {
+    bottom: 295px;
+    right: 0;
+    width: 303px;
+    height: 317px;
+  }
+}

@@ -4,5 +4,7 @@
 // import 'swiper/css';
 
 import { initVideoLoader } from './modules/button-play.js';
+import { initTabs } from './modules/tabs.js';
 
 initVideoLoader();
+initTabs();

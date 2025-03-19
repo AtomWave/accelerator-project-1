@@ -70,3 +70,13 @@
     @content;
   }
 }
+
+@mixin disabled {
+  &.disabled,
+  &[disabled] {
+    @content;
+    pointer-events: none;
+    cursor: not-allowed;
+  }
+}
+
