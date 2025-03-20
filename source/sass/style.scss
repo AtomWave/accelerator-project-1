@@ -11,15 +11,16 @@
 @import "./global/container";
 // ---------------------------------
 
+// Components
+@import "./components/button";
+@import "./components/btn";
+// ---------------------------------
+
 // Blocks
 @import "./blocks/hero";
 @import "./blocks/gym";
 @import "./blocks/subscription";
 @import "./blocks/subscription-card";
 @import "./blocks/tabs";
-// ---------------------------------
-
-// Components
-@import "./components/button";
-@import "./components/btn";
+@import "./blocks/games";
 // ---------------------------------

@@ -1,6 +1,7 @@
 .subscription {
   padding: 40px 0 47px;
   background-color: $background-additional;
+  position: relative;
 
   @include vp-768 {
     padding: 60px 0 67px;
@@ -98,14 +99,14 @@
   @include vp-768 {
     display: block;
     position: absolute;
-    bottom: 214px;
+    bottom: 48px;
     right: 0;
     width: 325px;
     height: 340px;
   }
 
   @include vp-1366 {
-    bottom: 295px;
+    bottom: 129px;
     right: 0;
     width: 303px;
     height: 317px;
