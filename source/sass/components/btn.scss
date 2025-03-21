@@ -1,40 +1,72 @@
-// .btn {
-//   position: absolute;
-//   top: 50%;
-//   left: 50%;
-//   transform: translate(-50%, -50%);
-//   width: 52px;
-//   height: 52px;
-//   border-radius: 50%;
-//   border: none;
-//   outline-offset: 8px;
-//   outline: 2px solid $stroke-play-btn;
-//   background: $play-button-gradient;
-//   color: $base-white;
+.btn {
+  position: relative;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: $additional-buttons;
+  padding: 10px;
+  align-self: flex-start;
 
-//   @include hover {
-//     background: $base-white;
-//     color: $stroke-play-btn-hover;
-//     outline-color: $stroke-play-btn-hover;
-//   }
+  &::after {
+    display: block;
+    width: calc(100% - 20px);
+    height: 1px;
+    position: absolute;
+    content: "";
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5px;
+    background-color: $additional-buttons;
+  }
 
-//   @include focus {
-//     background: $stroke-play-btn-focus;
-//     color: $base-primary;
-//     outline-color: $base-primary;
-//   }
+  @include hover {
+    opacity: 0.8;
 
-//   @include active {
-//     background: $base-white;
-//     color: $base-primary;
-//     outline-color: $base-primary;
-//   }
+    &::after {
+      opacity: 0.8;
+    }
+  }
 
-//   &.disabled {
-//     opacity: 0.4;
-//     background: $base-white;
-//     color: $base-primary;
-//     outline-color: $base-primary;
-//     cursor: not-allowed;
-//   }
-// }
+  @include focus {
+    outline: 1px solid $additional-buttons;
+    &::after {
+      display: none;
+    }
+  }
+
+  @include active {
+  }
+
+  &.disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  &--special {
+    color: $base-white;
+
+    &::after {
+      background-color: $base-white;
+    }
+
+    @include vp-768 {
+      margin: 0;
+    }
+
+    @include focus {
+      outline: 1px solid $base-white;
+      &::after {
+        display: none;
+      }
+    }
+
+    @include active {
+    }
+
+    &.disabled {
+      opacity: 0.3;
+      cursor: not-allowed;
+    }
+  }
+}
