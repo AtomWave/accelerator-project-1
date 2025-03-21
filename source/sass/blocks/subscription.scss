@@ -43,14 +43,39 @@
 
 .subscription__content {
   padding-top: 35px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+
+    bottom: -55px;
+    right: -60px;
+    width: 275px;
+    height: 328px;
+    content: "";
+    display: none;
+    background-image: url("../../img/barbell-plates-tablet.png");
+    transform: rotate(-30deg);
+  }
 
   @include vp-768 {
     padding-top: 52px;
     width: 100%;
+
+    &::after {
+      display: block;
+    }
   }
 
   @include vp-1366 {
-    padding-top: 49px;
+    &::after {
+      background-image: url("../../img/barbell-plates.png");
+      padding-top: 49px;
+      width: 321px;
+      height: 384px;
+      bottom: -100px;
+      right: -195px;
+    }
   }
 }
 
