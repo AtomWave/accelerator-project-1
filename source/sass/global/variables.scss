@@ -15,7 +15,7 @@ $additional-accent: #103aae;
 $price-shadow: #e8e8e8;
 $desc: #2e35ac;
 $additional-gradient: linear-gradient(45deg, #d10a42, #0041ca);
-$features-gradient: linear-gradient(129deg, #d10a42 0%, #0041ca 100%);
+$features-gradient: linear-gradient(129deg, #d10a42 0%, #0041ca 60%);
 
 $hero-gradient: linear-gradient(
   90deg,
@@ -40,6 +40,7 @@ $button-gradient-focus: linear-gradient(
   rgba(0, 62, 183, 0.8) 100%
 );
 $card-gradient: linear-gradient(130deg, #ed0233 0%, #003eb7 100%);
+$offer-gradient: linear-gradient(160deg, #d10a42 0%, #00359f 100%);
 $stroke-play-btn: rgba(237, 2, 51, 0.2);
 $border-bottom-color: rgba(120, 120, 120, 0.2);
 $stroke-play-btn-hover: rgba(16, 38, 84, 0.6);

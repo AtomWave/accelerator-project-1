@@ -258,9 +258,9 @@
             </div>
             <div class="subscription__image-wrapper">
               <picture>
-                <source type="image/webp" media="(min-width: 1366px)" srcset="./img/barbell-plates.webp, ./img/barbell-plates@2x.webp 2x" width="470" height="494">
-                <source type="image/webp" media="(min-width: 768px)" srcset="./img/barbell-plates-tablet.webp, ./img/barbell-plates-tablet@2x.webp 2x" width="470" height="494">
-                <img src="./img/barbell-plates.png" alt="" width="470" height="494" loading="lazy">
+                <source type="image/webp" media="(min-width: 1366px)" srcset="./img/barbell-plates.webp, ./img/barbell-plates@2x.webp 2x" width="321" height="384">
+                <source type="image/webp" media="(min-width: 768px)" srcset="./img/barbell-plates-tablet.webp, ./img/barbell-plates-tablet@2x.webp 2x" width="275" height="328">
+                <img src="./img/barbell-plates.png" alt="" width="321" height="384" loading="lazy">
               </picture>
             </div>
           </div>
@@ -290,7 +290,7 @@
                   </dl>
                   <div>
                     <h3>Собственная парковка</h3>
-                    <p>Вы&nbsp;всегда найдете место для своей машины на&nbsp;нашей парковке</p>
+                    <p>Вы&nbsp;всегда найдете место для&nbsp;своей машины на&nbsp;нашей парковке</p>
                   </div>
                 </li>
                 <li class="features__item benefit benefit--special">
@@ -327,7 +327,47 @@
           </div>
         </section>
 
-        <div data-test="offers">offers</div>
+        <section class="offers" data-test="offers">
+          <div class="offers__container container">
+            <h2 class="offers__title">Акции</h2>
+            <ul class="offers__list list-reset">
+              <li class="offers__item offers__item--special">
+                <div class="offers__description">
+                  <h3>
+                    Год
+                    <span>4999</span>
+                  </h3>
+                  <p>Безлимитный абонемент в&nbsp;тренажерный зал</p>
+                  <a class="offers__link" href="#">подробнее</a>
+                </div>
+                <div class="offers__image">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1366px)" srcset="./img/girl.webp 1x, ./img/girl@2x.webp 2x" width="280" height="460">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="./img/girl-tablet.webp 1x, ./img/girl-tablet@2x.webp 2x" width="400" height="462">
+                    <source type="image/webp" srcset="./img/girl-mobile.webp 1x, ./img/girl-mobile@2x.webp 2x" width="320" height="360">
+
+                    <source type="image/jpeg" media="(min-width: 1366px)" srcset="./img/girl.jpg 1x, ./img/girl@2x.jpg 2x" width="280" height="460">
+                    <source type="image/jpeg" media="(min-width: 768px)" srcset="./img/girl-tablet.jpg 1x, ./img/girl-tablet@2x.jpg 2x" width="400" height="462">
+                    <source type="image/jpeg" srcset="./img/girl-mobile.jpg 1x, ./img/girl-mobile@2x.jpg 2x" width="320" height="360">
+
+                    <img class="offers__img" src="./img/girl-mobile.jpg" alt="Спортивная девушка." srcset="./img/girl-mobile@2x.jpg 2x" width="320" height="360" loading="lazy">
+                  </picture>
+                </div>
+              </li>
+              <li class="offers__item">
+                <h3>Месяц бесплатно</h3>
+                <p>Приведи друга, получи абонемент в&nbsp;подарок</p>
+                <a class="offers__link" href="#">подробнее</a>
+              </li>
+              <li class="offers__item">
+                <h3>Скидка 20%</h3>
+                <p>Корпоративный фитнес с&nbsp;командой</p>
+                <a class="offers__link" href="#">подробнее</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
         <div data-test="faq">faq</div>
         <div data-test="reviews">reviews</div>
         <div data-test="form">form</div>

@@ -72,15 +72,20 @@
       font-size: 16px;
       line-height: 150%;
     }
+
+    @include vp-1366 {
+      max-width: 210px;
+    }
   }
 
   @include vp-768 {
     display: flex;
     gap: 15px;
+    justify-content: space-between;
   }
 
   @include vp-1366 {
-    gap: 43px;
+    gap: 0;
   }
 }
 
@@ -143,6 +148,7 @@
 
     @include vp-1366 {
       padding: 0 30px;
+      max-width: 100%;
     }
   }
 

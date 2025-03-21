@@ -95,20 +95,21 @@
 
 .subscription__image-wrapper {
   display: none;
+  transform: rotate(-30deg);
 
   @include vp-768 {
     display: block;
     position: absolute;
-    bottom: 48px;
-    right: 0;
-    width: 325px;
-    height: 340px;
+    bottom: 12px;
+    right: -15px;
+    width: 275px;
+    height: 328px;
   }
 
   @include vp-1366 {
-    bottom: 129px;
-    right: 0;
-    width: 303px;
-    height: 317px;
+    bottom: 7px;
+    right: -92px;
+    width: 321px;
+    height: 384px;
   }
 }
