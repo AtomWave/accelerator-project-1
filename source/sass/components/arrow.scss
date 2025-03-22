@@ -1,4 +1,51 @@
 .arrow {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0;
+  cursor: pointer;
+  overflow: hidden;
+  color: $base-primary;
+  box-shadow: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+
+  &:last-child {
+    transform: rotate(180deg) translateY(50%);
+  }
+
+  @include hover {
+    border-color: $base-primary;
+  }
+
+  @include focus {
+    outline: none;
+    border-color: $base-primary;
+    background-color: $price-shadow;
+  }
+
+  @include active {
+    color: $base-white;
+    background-color: $base-primary;
+  }
+
+  &.disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+    border-color: transparent;
+    background-color: transparent;
+    color: $stroke-disabled;
+  }
+
+  @include vp-768 {
+    display: flex;
+  }
 }
+
 .arrow--slider {
 }

@@ -7,12 +7,14 @@ $secondary-font: "Roboto Condensed", "Arial", sans-serif;
 //Основные цвета
 $base-primary: #102654;
 $base-white: #ffffff;
+$base-white-lite: #b6bdcc;
 $base-white-opacity: rgba(255, 255, 255, 0.8);
 $base-white-opacity-7: rgba(255, 255, 255, 0.7);
-$base-primary-opacity: rgba(16, 38, 84, 0.5);
+$base-primary-opacity: rgba(16, 38, 86, 0.5);
 $base-black: #000000;
 $additional-accent: #103aae;
 $price-shadow: #e8e8e8;
+$coach-card-shadow: #2a3b63;
 $desc: #2e35ac;
 $additional-gradient: linear-gradient(45deg, #d10a42, #0041ca);
 $features-gradient: linear-gradient(129deg, #d10a42 0%, #0041ca 60%);
@@ -44,6 +46,7 @@ $offer-gradient: linear-gradient(160deg, #d10a42 0%, #00359f 100%);
 $stroke-play-btn: rgba(237, 2, 51, 0.2);
 $border-bottom-color: rgba(120, 120, 120, 0.2);
 $stroke-play-btn-hover: rgba(16, 38, 84, 0.6);
+$stroke-disabled: rgba(16, 38, 84, 0.3);
 $stroke-play-btn-focus: #c8c9cc;
 
 //Фон
@@ -64,6 +67,5 @@ $tablet-width: 768px;
 $desktop-width: 1366px;
 
 // Анимация
-$tf-default: ease;
-$trans-default: 0.3s $tf-default;
+$tr-default: 0.3s ease;
 // ---------------------------------
