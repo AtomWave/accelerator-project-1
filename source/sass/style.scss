@@ -1,5 +1,6 @@
 // Vendor
 @import "vendor/normalize";
+@import "vendor/swiper";
 // ---------------------------------
 
 // Global
@@ -14,6 +15,7 @@
 // Components
 @import "./components/button";
 @import "./components/btn";
+@import "./components/arrow";
 // ---------------------------------
 
 // Blocks
@@ -26,4 +28,6 @@
 @import "./blocks/features";
 @import "./blocks/benefit";
 @import "./blocks/offers";
+@import "./blocks/juri.scss";
+@import "./blocks/coach-card.scss";
 // ---------------------------------
