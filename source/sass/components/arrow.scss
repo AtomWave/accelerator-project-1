@@ -34,7 +34,7 @@
     background-color: $base-primary;
   }
 
-  @include disabled {
+  &.disabled {
     cursor: not-allowed;
     pointer-events: none;
     border-color: transparent;
