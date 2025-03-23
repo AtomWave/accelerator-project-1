@@ -592,7 +592,65 @@
         </section>
 
         <div data-test="faq">faq</div>
-        <div data-test="reviews">reviews</div>
+
+        <section class="reviews" data-test="reviews">
+          <div class="reviews__container container">
+            <h2 class="reviews__title">Отзывы</h2>
+            <div class="reviews__slider">
+              <button class="reviews__button-prev arrow arrow--slider" type="button" data-swiper-reviews-prev="true" aria-label="предыдущий слайд.">
+                <svg width="16" height="32" viewBox="0 0 16 32">
+                  <use href="/__spritemap#sprite-arrow-slider"></use>
+                </svg>
+              </button>
+              <div class="reviews__swiper swiper swiper-reviews">
+                <ul class="swiper-wrapper reviews__swiper-wrapper list-reset">
+                  <li class="swiper-slide reviews__slide reviews-card" tabindex="0" data-slide-swiper-reviews="true">
+                    <div class="reviews__content">
+                      <div class="reviews__photo-wrapper">
+                        <picture>
+                          <source type="image/webp" srcset="./img/reviews-avatar.webp 1x, ./img/reviews-avatar@2x.webp 2x" width="80" height="80" media="(min-width: 768px)">
+                          <source type="image/webp" srcset="./img/reviews-avatar-mobile.webp 1x, ./img/reviews-avatar-mobile@2x.webp 2x" width="68" height="68" media="(min-width: 320px)">
+                          <img class="reviews__photo" src="./img/reviews-avatar.jpg" alt="Фотография клиента" srcset="./img/reviews-avatar@2x.jpg 2x" width="80" height="80" loading="lazy">
+                        </picture>
+                      </div>
+                      <div class="reviews__text-wrapper">
+                        <h3 class="reviews__name">Анна Орлова</h3>
+                        <p class="reviews__text">
+                          &laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры
+                          обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет&nbsp;очередей&raquo;
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="swiper-slide reviews__slide reviews-card" tabindex="0" data-slide-swiper-reviews="true">
+                    <div class="reviews__content">
+                      <div class="reviews__photo-wrapper">
+                        <picture>
+                          <source type="image/webp" srcset="./img/reviews-avatar.webp 1x, ./img/reviews-avatar@2x.webp 2x" width="80" height="80" media="(min-width: 768px)">
+                          <source type="image/webp" srcset="./img/reviews-avatar-mobile.webp 1x, ./img/reviews-avatar-mobile@2x.webp 2x" width="68" height="68" media="(min-width: 320px)">
+                          <img class="reviews__photo" src="./img/reviews-avatar.jpg" alt="Фотография клиента" srcset="./img/reviews-avatar@2x.jpg 2x" width="80" height="80" loading="lazy">
+                        </picture>
+                      </div>
+                      <div class="reviews__text-wrapper">
+                        <h3 class="reviews__name">Анна Орлова</h3>
+                        <p class="reviews__text">
+                          &laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры
+                          обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <button class="reviews__button-next arrow arrow--slider" type="button" data-swiper-reviews-next="true" aria-label="следующий слайд.">
+                <svg width="16" height="32" viewBox="0 0 16 32">
+                  <use href="/__spritemap#sprite-arrow-slider"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </section>
+
         <div data-test="form">form</div>
       </main>
 
