@@ -4,6 +4,10 @@
   @include vp-768 {
     padding: 30px 0 60px;
   }
+
+  @include vp-1366 {
+    padding: 100px 0;
+  }
 }
 
 .juri__container {
@@ -32,10 +36,18 @@
 
 .juri__button-prev {
   left: -15px;
+
+  @include vp-1366 {
+    left: -73px;
+  }
 }
 
 .juri__button-next {
   right: -15px;
+
+  @include vp-1366 {
+    right: -75px;
+  }
 }
 
 .juri__button-prev,
@@ -43,11 +55,19 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+
+  @include vp-1366 {
+    top: calc(50% - 3px);
+  }
 }
 
 .juri__swiper {
   @include vp-768 {
     width: 560px;
+  }
+
+  @include vp-1366 {
+    width: 100%;
   }
 }
 
