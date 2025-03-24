@@ -41,6 +41,10 @@
 }
 
 @mixin focus {
+  &:focus {
+    @content;
+  }
+
   &:focus-visible {
     @content;
   }
@@ -51,6 +55,7 @@
     }
   }
 }
+
 
 @mixin active {
   &:active,

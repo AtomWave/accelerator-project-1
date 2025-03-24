@@ -1,0 +1,210 @@
+.faq-accordion {
+}
+
+.faq-accordion__list {
+  border-top: solid 1px $divider;
+
+  li {
+    padding-top: 20px;
+    padding-bottom: 21px;
+    box-shadow: inset 0 -1px $divider;
+    overflow: hidden;
+
+    @include vp-768 {
+      padding: 24px 0 23px;
+    }
+
+    @include vp-1366 {
+      padding: 23px 0;
+    }
+  }
+
+  li:last-child {
+    @include vp-768 {
+      padding: 24px 0 23px;
+    }
+
+    @include vp-1366 {
+      padding: 23px 0;
+    }
+  }
+
+  li:first-child span {
+    max-width: 210px;
+
+    @include vp-768 {
+      max-width: unset;
+    }
+  }
+
+  label {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 100%;
+    color: $base-primary;
+    cursor: pointer;
+    display: flex;
+    min-height: 40px;
+    align-items: center;
+    position: relative;
+    padding-right: 40px;
+    user-select: none;
+
+    @include vp-768 {
+      font-size: 22px;
+    }
+
+    @include vp-1366 {
+      font-size: 24px;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 30px;
+      height: 30px;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: transparent;
+      border-radius: 50%;
+      border: 1px solid $additional-buttons;
+
+      @include vp-768 {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      right: 1px;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 14px;
+      height: 14px;
+      background-image: url("../../__spritemap#sprite-plus-view");
+
+      @include vp-768 {
+        width: 20px;
+        height: 20px;
+        right: 0;
+      }
+    }
+  }
+}
+
+.faq-accordion__item {
+  font-family: $secondary-font;
+
+  input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  span {
+    display: block;
+    max-width: 231px;
+
+    @include vp-768 {
+      max-width: 500px;
+    }
+
+    @include vp-1366 {
+      margin-top: 0;
+      max-width: 650px;
+    }
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 125%;
+    margin: 0;
+    max-height: 0;
+    max-width: 290px;
+    transition: margin 0.5s, max-height 0.2s;
+    overflow: hidden;
+    padding-right: 50px;
+
+    @include vp-768 {
+      font-size: 18px;
+      line-height: 133%;
+      max-width: 559px;
+      padding: 0;
+    }
+
+    @include vp-1366 {
+      max-width: 660px;
+      padding-right: 10px;
+    }
+  }
+
+  input:checked ~ p {
+    max-height: 100vh;
+    margin-top: 20px;
+
+    @include vp-768 {
+      margin-top: 10px;
+    }
+
+    @include vp-1366 {
+      margin-top: 23px;
+    }
+  }
+}
+
+.faq-accordion__item input {
+  @include hover {
+    & ~ label::before {
+      background-color: $additional-buttons;
+    }
+
+    & ~ label::after {
+      background-image: url("../../__spritemap#sprite-minus-white-view");
+      background-repeat: no-repeat;
+      transform: translateX(-50%);
+    }
+  }
+
+  @include focus {
+    & ~ label::before {
+      background-color: $divider;
+    }
+  }
+
+  @include active {
+    & ~ label::before {
+      background-color: $additional-buttons;
+    }
+  }
+
+  @include disabled {
+    & ~ label::before {
+      opacity: 0.3;
+    }
+  }
+}
+
+.faq-accordion__item input:checked {
+  & ~ label::before {
+    background-color: $additional-buttons;
+  }
+
+  & ~ label::after {
+    background-image: url("../../__spritemap#sprite-minus-white-view");
+    background-repeat: no-repeat;
+    transform: translateX(-50%);
+  }
+}
+
+.faq-accordion--hidden {
+  display: none;
+}

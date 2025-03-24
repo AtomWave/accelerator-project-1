@@ -38,7 +38,7 @@
   @include active {
   }
 
-  &.disabled {
+  @include disabled {
     opacity: 0.3;
     cursor: not-allowed;
   }
@@ -64,7 +64,7 @@
     @include active {
     }
 
-    &.disabled {
+    @include disabled {
       opacity: 0.3;
       cursor: not-allowed;
     }
