@@ -812,7 +812,56 @@
           </div>
         </section>
 
-        <div data-test="form">form</div>
+        <section class="form form--contact-us" data-test="form">
+          <h2 class="form__title--hidden">Связь с нами.</h2>
+          <form class="form__main" method="post" enctype="multipart/form-data" action="https://echo.htmlacademy.ru/" autocomplete="off">
+            <div class="form__container">
+              <h3 class="form__heading">Бесплатное занятие</h3>
+              <label class="form__field form__field--name" for="name">
+                <span class="form__label--hidden">Имя.</span>
+                <input class="form__input form__input--name" id="name" name="name" type="text" required placeholder="Имя" pattern="[A-Za-zА-Яа-яЁё\s]+">
+                <span class="form__error">Только буквы и пробелы</span>
+              </label>
+              <label class="form__field form__field--phone" for="phone">
+                <span class="form__label--hidden">Телефон.</span>
+                <input class="form__input form__input--phone" id="phone" name="phone" type="text" required placeholder="Телефон" pattern="\d+">
+                <span class="form__error">Не должно содержать букв</span>
+              </label>
+              <button class="form__submit button" type="submit">Отправить</button>
+            </div>
+          </form>
+
+          <section class="form__contacts">
+            <div class="form__contacts-container">
+              <h3 class="form__contacts-title">Контакты</h3>
+              <dl class="form__contacts-list">
+                <div class="form__contacts-item">
+                  <dt class="form__contacts-term">Адрес:</dt>
+                  <dd class="form__contacts-description">
+                    <address class="form__contacts-address">г. Омск, ул. 60 лет Октября, 7</address>
+                  </dd>
+                </div>
+                <div class="form__contacts-item">
+                  <dt class="form__contacts-term">График работы:</dt>
+                  <dd class="form__contacts-description">Пн-Вс: с 8:00 до 22:00</dd>
+                </div>
+                <div class="form__contacts-item">
+                  <dt class="form__contacts-term">Телефон:</dt>
+                  <dd class="form__contacts-description">
+                    <a class="form__contacts-link" href="tel:88005555555">8 800 555-55-55</a>
+                  </dd>
+                </div>
+                <div class="form__contacts-item">
+                  <dt class="form__contacts-term">Email:</dt>
+                  <dd class="form__contacts-description">
+                    <a class="form__contacts-link" href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
+                  </dd>
+                </div>
+              </dl>
+            </div>
+          </section>
+        </section>
+
       </main>
 
       <footer class="page-body__footer footer" data-test="footer">footer</footer>
