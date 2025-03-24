@@ -591,7 +591,166 @@
           </div>
         </section>
 
-        <div data-test="faq">faq</div>
+<section class="faq-section" data-test="faq">
+  <div class="faq-section__container container">
+    <h2 class="faq-section__title">Вопросы и ответы</h2>
+
+    <div class="faq-tabs" data-faq-tabs="parent">
+      <ul class="faq-tabs__controls" data-faq-tabs="controls">
+        <li class="faq-tabs__item">
+          <button class="faq-tabs__button tab-button tab-button--active" id="faq-tab-center" name="faq-tab" type="button" data-faq-tabs="control" data-tab-id="center">Центр</button>
+        </li>
+        <li class="faq-tabs__item">
+          <button class="faq-tabs__button tab-button" id="faq-tab-subscription" name="faq-tab" type="button" data-faq-tabs="control" data-tab-id="subscription">Абонемент</button>
+        </li>
+        <li class="faq-tabs__item">
+          <button class="faq-tabs__button tab-button" id="faq-tab-services" name="faq-tab" type="button" data-faq-tabs="control" data-tab-id="services">Услуги</button>
+        </li>
+        <li class="faq-tabs__item">
+          <button class="faq-tabs__button tab-button" id="faq-tab-rules" name="faq-tab" type="button" data-faq-tabs="control" data-tab-id="rules">Правила</button>
+        </li>
+      </ul>
+
+      <div class="faq-tabs__content">
+
+        <div class="faq-accordion" data-faq-accordion="wrapper" data-tab-content="center">
+          <ul class="faq-accordion__list">
+            <li class="faq-accordion__item">
+              <input class="faq-accordion__input" id="accordion-item-1-center" name="accordion-item-center" type="checkbox">
+              <label class="faq-accordion__label" for="accordion-item-1-center" data-test="toggle">
+                <span>Как стать членом фитнес-центра?</span>
+              </label>
+              <p>Для оформления членства в нашем фитнес-центре вам необходимо обратиться на стойку информации. Наши сотрудники с удовольствием помогут вам выбрать подходящий абонемент и ответят на все ваши вопросы.</p>
+            </li>
+            <li class="faq-accordion__item">
+              <input class="faq-accordion__input" id="accordion-item-2-center" name="accordion-item-center" type="checkbox">
+              <label class="faq-accordion__label" for="accordion-item-2-center" data-test="toggle">
+                <span>Где можно посмотреть расписание?</span>
+              </label>
+              <p>Вы можете ознакомиться с расписанием на стойке информации, на нашем официальном сайте, а также есть возможность оформить подписку на наши новости и получать расписание и обновления на почту каждую неделю.</p>
+            </li>
+            <li class="faq-accordion__item">
+              <input class="faq-accordion__input" id="accordion-item-3-center" name="accordion-item-center" type="checkbox">
+              <label class="faq-accordion__label" for="accordion-item-3-center" data-test="toggle">
+                <span>Есть кулеры в центре? Предоставляются полотенца?</span>
+              </label>
+              <p>Да, в нашем фитнес-центре есть кулеры с питьевой водой в каждой зоне. Полотенца предоставляются бесплатно при предъявлении клубной карты.</p>
+            </li>
+            <li class="faq-accordion__item">
+              <input class="faq-accordion__input" id="accordion-item-4-center" name="accordion-item-center" type="checkbox">
+              <label class="faq-accordion__label" for="accordion-item-4-center" data-test="toggle">
+                <span>Сколько тренеров работает в&nbsp;клубе и&nbsp;какова их&nbsp;квалификация?</span>
+              </label>
+              <p>В нашем клубе работает более 20 квалифицированных тренеров с опытом работы более 5 лет. Вы можете ознакомиться с их анкетами и сертификатами на нашем сайте в разделе "Тренеры".</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="faq-accordion faq-accordion--hidden" data-faq-accordion="wrapper" data-tab-content="subscription">
+          <ul class="faq-accordion__list">
+            <li class="faq-accordion__item">
+              <input class="faq-accordion__input" id="accordion-item-1-subscription" name="accordion-item-subscription" type="checkbox">
+              <label class="faq-accordion__label" for="accordion-item-1-subscription" data-test="toggle">
+                <span>Какие виды абонементов у вас есть?</span>
+              </label>
+              <p>Мы предлагаем широкий выбор абонементов: "Дневной", "Полный день", "Выходного дня", а также специальные абонементы для студентов и пенсионеров. Подробную информацию о каждом абонементе вы можете найти на нашем сайте или уточнить у менеджеров.</p>
+            </li>
+            <li class="faq-accordion__item">
+              <input class="faq-accordion__input" id="accordion-item-2-subscription" name="accordion-item-subscription" type="checkbox">
+              <label class="faq-accordion__label" for="accordion-item-2-subscription" data-test="toggle">
+                <span>Можно ли заморозить абонемент?</span>
+              </label>
+              <p>Да, вы можете заморозить свой абонемент на срок от 7 до 30 дней. Для этого необходимо обратиться с заявлением на стойку информации не позднее чем за 24 часа до предполагаемой даты заморозки.</p>
+            </li>
+            <li class="faq-accordion__item">
+              <input class="faq-accordion__input" id="accordion-item-3-subscription" name="accordion-item-subscription" type="checkbox">
+              <label class="faq-accordion__label" for="accordion-item-3-subscription" data-test="toggle">
+                <span>Что входит в стоимость абонемента?</span>
+              </label>
+              <p>В стоимость абонемента входит посещение тренажерного зала, групповых занятий (в соответствии с расписанием), сауны, а также пользование душевыми и раздевалками.</p>
+            </li>
+            <li class="faq-accordion__item">
+              <input class="faq-accordion__input" id="accordion-item-4-subscription" name="accordion-item-subscription" type="checkbox">
+              <label class="faq-accordion__label" for="accordion-item-4-subscription" data-test="toggle">
+                <span>Есть ли скидки на семейные абонементы?</span>
+              </label>
+              <p>Да, у нас действует специальная программа лояльности для семей. При покупке абонементов для двух и более членов семьи предоставляется скидка 10% на каждый абонемент.</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="faq-accordion faq-accordion--hidden" data-faq-accordion="wrapper" data-tab-content="services">
+          <ul class="faq-accordion__list">
+            <li class="faq-accordion__item">
+              <input class="faq-accordion__input" id="accordion-item-1-services" name="accordion-item-services" type="checkbox">
+              <label class="faq-accordion__label" for="accordion-item-1-services" data-test="toggle">
+                <span>Какие дополнительные услуги предоставляет ваш центр?</span>
+              </label>
+              <p>Мы предлагаем широкий спектр дополнительных услуг, таких как персональные тренировки, массаж, фитнес-бар, солярий, а также консультации диетолога и спортивного врача.</p>
+            </li>
+            <li class="faq-accordion__item">
+              <input class="faq-accordion__input" id="accordion-item-2-services" name="accordion-item-services" type="checkbox">
+              <label class="faq-accordion__label" for="accordion-item-2-services" data-test="toggle">
+                <span>Проводятся ли в центре какие-либо мероприятия?</span>
+              </label>
+              <p>Да, мы регулярно проводим различные мероприятия: мастер-классы, соревнования, фитнес-вечеринки, а также дни открытых дверей. Следите за нашими новостями на сайте и в социальных сетях.</p>
+            </li>
+            <li class="faq-accordion__item">
+              <input class="faq-accordion__input" id="accordion-item-3-services" name="accordion-item-services" type="checkbox">
+              <label class="faq-accordion__label" for="accordion-item-3-services" data-test="toggle">
+                <span>Есть ли в центре фитнес-бар?</span>
+              </label>
+              <p>Да, в нашем фитнес-баре вы можете приобрести спортивное питание, напитки, а также перекусить после тренировки. Мы предлагаем широкий выбор протеиновых коктейлей, энергетиков и полезных закусок.</p>
+            </li>
+            <li class="faq-accordion__item">
+              <input class="faq-accordion__input" id="accordion-item-4-services" name="accordion-item-services" type="checkbox">
+              <label class="faq-accordion__label" for="accordion-item-4-services" data-test="toggle">
+                <span>Предоставляете ли вы услуги массажа?</span>
+              </label>
+              <p>Да, в нашем центре работает квалифицированный массажист. Вы можете записаться на сеанс массажа по телефону или на стойке информации.</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="faq-accordion faq-accordion--hidden" data-faq-accordion="wrapper" data-tab-content="rules">
+          <ul class="faq-accordion__list">
+            <li class="faq-accordion__item">
+              <input class="faq-accordion__input" id="accordion-item-1-rules" name="accordion-item-rules" type="checkbox">
+              <label class="faq-accordion__label" for="accordion-item-1-rules" data-test="toggle">
+                <span>Какие правила посещения центра необходимо соблюдать?</span>
+              </label>
+              <p>Просим вас соблюдать следующие правила: переодеваться в раздевалках, использовать полотенца во время тренировок, убирать за собой оборудование после использования, а также не создавать помех другим посетителям.</p>
+            </li>
+            <li class="faq-accordion__item">
+              <input class="faq-accordion__input" id="accordion-item-2-rules" name="accordion-item-rules" type="checkbox">
+              <label class="faq-accordion__label" for="accordion-item-2-rules" data-test="toggle">
+                <span>Есть ли ограничения по возрасту для посещения центра?</span>
+              </label>
+              <p>Дети до 14 лет могут посещать центр только в сопровождении взрослых. Лица старше 70 лет должны предоставить справку от врача об отсутствии противопоказаний к занятиям спортом.</p>
+            </li>
+            <li class="faq-accordion__item">
+              <input class="faq-accordion__input" id="accordion-item-3-rules" name="accordion-item-rules" type="checkbox">
+              <label class="faq-accordion__label" for="accordion-item-3-rules" data-test="toggle">
+                <span>Что делать в случае утери вещей?</span>
+              </label>
+              <p>В случае утери вещей обратитесь на стойку информации. Мы постараемся вам помочь в поиске пропажи.</p>
+            </li>
+            <li class="faq-accordion__item">
+              <input class="faq-accordion__input" id="accordion-item-4-rules" name="accordion-item-rules" type="checkbox">
+              <label class="faq-accordion__label" for="accordion-item-4-rules" data-test="toggle">
+                <span>Можно ли посещать центр в состоянии алкогольного опьянения?</span>
+              </label>
+              <p>Посещение центра в состоянии алкогольного или наркотического опьянения строго запрещено. Администрация оставляет за собой право отказать в посещении лицам, находящимся в нетрезвом виде.</p>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
         <section class="reviews" data-test="reviews">
           <div class="reviews__container container">
