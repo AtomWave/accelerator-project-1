@@ -16,7 +16,9 @@
   display: none;
 
   &:last-child {
-    transform: rotate(180deg) translateY(50%);
+    svg {
+      transform: rotate(180deg);
+    }
   }
 
   @include hover {
