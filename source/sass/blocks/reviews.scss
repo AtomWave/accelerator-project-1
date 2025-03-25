@@ -74,6 +74,10 @@
 }
 
 .reviews__swiper {
+  width: 240px;
+  box-shadow: $reviews-shadow;
+  background-color: $additional-buttons;
+
   @include vp-768 {
     width: 500px;
   }
@@ -102,6 +106,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: $reviews-shadow;
 }
 
 .reviews-card {
@@ -114,9 +119,12 @@
   font-family: $secondary-font;
   text-align: center;
   padding: 30px 25px;
+  overflow-y: auto;
+  height: 328px;
 
   @include vp-768 {
     width: 500px;
+    height: 242px;
     display: flex;
     gap: 40px;
     padding: 40px 30px;
@@ -124,6 +132,7 @@
 
   @include vp-1366 {
     width: 560px;
+    height: 258px;
     padding: 60px;
     gap: 30px;
   }

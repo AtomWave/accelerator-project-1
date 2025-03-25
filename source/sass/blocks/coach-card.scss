@@ -58,6 +58,7 @@
   font-family: $secondary-font;
   display: flex;
   flex-direction: column;
+  overflow-y: auto;
 }
 
 .coach-card__name {
