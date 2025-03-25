@@ -812,19 +812,19 @@
           </div>
         </section>
 
-        <section class="form form--contact-us" data-test="form">
-          <h2 class="form__title--hidden">Связь с нами.</h2>
+        <section class="form" data-test="form">
+          <h2 class="visually-hidden">Связь с нами.</h2>
           <form class="form__main" method="post" enctype="multipart/form-data" action="https://echo.htmlacademy.ru/" autocomplete="off">
-            <div class="form__container">
+            <div class="form__container container">
               <h3 class="form__heading">Бесплатное занятие</h3>
               <label class="form__field form__field--name" for="name">
-                <span class="form__label--hidden">Имя.</span>
-                <input class="form__input form__input--name" id="name" name="name" type="text" required placeholder="Имя" pattern="[A-Za-zА-Яа-яЁё\s]+">
+                <span class="visually-hidden">Имя.</span>
+                <input class="form__input form__input--name field" id="name" name="name" type="text" required placeholder="Имя" pattern="[A-Za-zА-Яа-яЁё\s]+">
                 <span class="form__error">Только буквы и пробелы</span>
               </label>
               <label class="form__field form__field--phone" for="phone">
-                <span class="form__label--hidden">Телефон.</span>
-                <input class="form__input form__input--phone" id="phone" name="phone" type="text" required placeholder="Телефон" pattern="\d+">
+                <span class="visually-hidden">Телефон.</span>
+                <input class="form__input form__input--phone field" id="phone" name="phone" type="text" required placeholder="Телефон" pattern="\d+">
                 <span class="form__error">Не должно содержать букв</span>
               </label>
               <button class="form__submit button" type="submit">Отправить</button>
@@ -832,9 +832,9 @@
           </form>
 
           <section class="form__contacts">
-            <div class="form__contacts-container">
+            <div class="form__contacts-container container">
               <h3 class="form__contacts-title">Контакты</h3>
-              <dl class="form__contacts-list">
+              <dl class="form__contacts-list list-reset">
                 <div class="form__contacts-item">
                   <dt class="form__contacts-term">Адрес:</dt>
                   <dd class="form__contacts-description">

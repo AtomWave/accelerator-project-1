@@ -1,0 +1,252 @@
+.form {
+}
+
+.form__main {
+  background-color: $base-primary;
+  color: $base-white;
+  padding: 70px 0px;
+  font-family: $secondary-font;
+
+  @include vp-768 {
+    padding: 60px 0;
+  }
+}
+
+.form__container {
+  @include vp-768 {
+    width: 440px;
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-areas:
+      "title  title"
+      "name   phone"
+      "submit submit";
+    gap: 35px 30px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include vp-1366 {
+    width: 683px;
+    margin: 0 0 0 auto;
+    padding: 0 103px;
+  }
+}
+
+.form__heading {
+  margin: 0;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 100%;
+  color: $base-white;
+
+  @include vp-768 {
+    font-size: 54px;
+    line-height: 54px;
+    grid-area: title;
+    text-align: center;
+  }
+
+  @include vp-1366 {
+    text-align: left;
+  }
+}
+
+.form__field {
+  margin-top: 29px;
+  display: block;
+
+  @include vp-768 {
+  }
+}
+
+.form__field--name {
+  @include vp-768 {
+    grid-area: name;
+  }
+}
+
+.form__input {
+  width: 100%;
+}
+
+.form__input--name {
+}
+
+.form__error {
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157%;
+  color: $primary-error;
+  margin-top: 2px;
+  display: none;
+  margin-bottom: -24px;
+}
+
+.form__field--phone {
+  margin-top: 30px;
+
+  @include vp-768 {
+    grid-area: phone;
+  }
+}
+
+.form__input--phone {
+}
+
+.form__submit {
+  margin-top: 38px;
+  display: block;
+  width: 100%;
+  padding: 22px 20px;
+
+  @include vp-768 {
+    grid-area: submit;
+    margin: 0;
+    padding: 28px 20px 24px;
+  }
+}
+
+.form__contacts {
+  padding: 37px 0 39px;
+  color: $base-primary;
+  font-family: $secondary-font;
+
+  @include vp-768 {
+    padding: 60px 0 53px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.form__contacts-container {
+  @include vp-1366 {
+    width: 683px;
+    margin: 0 auto 0 0;
+  }
+}
+
+.form__contacts-title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 100%;
+
+  @include vp-768 {
+    font-size: 54px;
+    text-align: center;
+  }
+
+  @include vp-1366 {
+    text-align: left;
+  }
+}
+
+.form__contacts-list {
+  margin: 37px 0 0;
+
+  @include vp-768 {
+    columns: 2 190px;
+    column-gap: 60px;
+    width: 440px;
+    margin: 36px auto 0;
+    position: relative;
+  }
+
+  @include vp-1366 {
+    margin: 36px 0 0;
+    columns: 2 178px;
+    column-gap: 120px;
+    width: 477px;
+  }
+}
+
+.contacts__list::before {
+  @include vp-768 {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: calc(100% - 8px);
+    left: 50%;
+    top: 0;
+    background-color: $divider;
+  }
+
+  @include vp-1366 {
+    width: 2px;
+    left: calc(50% - 1px);
+  }
+}
+
+.form__contacts-item {
+  @include vp-768 {
+    break-inside: avoid;
+  }
+}
+
+.contacts__content:not(:last-child) {
+  margin-bottom: 27px;
+
+  @include vp-768 {
+    margin-bottom: 14px;
+  }
+
+  @include vp-1366 {
+    margin-bottom: 15px;
+  }
+}
+
+.form__contacts-term {
+  font-family: $primary-font;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 100%;
+  color: $base-primary;
+
+  @include vp-768 {
+    font-size: 24px;
+  }
+}
+
+.form__contacts-description {
+  margin: 13px 0 0;
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: $base-primary;
+
+  @include vp-768 {
+    line-height: 157%;
+    margin-top: 5px;
+  }
+}
+
+.form__contacts-address {
+  font-style: normal;
+}
+
+.form__contacts-link {
+  text-decoration: none;
+  color: $base-primary;
+  outline: none;
+
+  @include hover {
+    opacity: 0.5;
+  }
+
+  @include focus {
+    outline: 2px solid $base-primary;
+    outline-offset: 4px;
+  }
+
+  @include active {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+
+  @include disabled {
+    opacity: 0.2;
+  }
+}

@@ -1,0 +1,68 @@
+.field {
+  font-family: $secondary-font;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 157%;
+  color: $base-white;
+  background-color: $base-primary;
+  border: none;
+  border-bottom: 1px solid $divider;
+  padding: 7px 0 3px;
+  outline: none;
+
+  @include vp-768 {
+    padding: 0 0 2px;
+    border-bottom: 2px solid $divider;
+  }
+}
+
+.field:hover {
+  border-bottom: 1px solid $base-white;
+
+  @include vp-768 {
+    border-bottom-width: 2px;
+  }
+}
+
+.field:focus {
+  outline: 1px solid $base-white;
+  outline-offset: 5px;
+  border-bottom-color: transparent;
+
+  @include vp-768 {
+    outline-width: 2px;
+  }
+}
+
+.field:disabled {
+  border-bottom: 1px solid rgb($base-white, 0.3);
+  color: rgb($base-white, 0.4);
+
+  @include vp-768 {
+    border-bottom-width: 2px;
+  }
+}
+
+.field::placeholder {
+  font-family: $primary-font;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: rgb($base-white, 0.4);
+}
+
+.field:focus::placeholder {
+  color: transparent;
+}
+
+// Error condition
+
+.field:not(:placeholder-shown):invalid,
+.field--invalid {
+  color: $base-white;
+  border-bottom: 1px solid $primary-error;
+
+  @include vp-768 {
+    border-bottom-width: 2px;
+  }
+}
