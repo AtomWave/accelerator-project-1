@@ -10,9 +10,6 @@
   }
 }
 
-.reviews__container {
-}
-
 .reviews__title {
   font-weight: 600;
   font-size: 32px;
@@ -79,6 +76,7 @@
 .reviews__button-next {
   position: absolute;
   top: 50%;
+
   // transform: translate(-100%, -50%);
 
   @include vp-768 {
@@ -91,28 +89,10 @@
   background-color: $additional-buttons;
 }
 
-.swiper-reviews {
-}
-
-.swiper-wrapper {
-}
-
-.reviews__swiper-wrapper {
-}
-
-.list-reset {
-}
-
-.swiper-slide {
-}
-
 .reviews__slide {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.reviews-card {
 }
 
 .reviews__content {
@@ -146,9 +126,6 @@
 .reviews__photo-wrapper {
   margin-bottom: 10px;
   flex-shrink: 0;
-}
-
-.reviews__photo {
 }
 
 .reviews__text-wrapper {

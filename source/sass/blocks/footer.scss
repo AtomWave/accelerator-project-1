@@ -29,6 +29,7 @@
   width: 100px;
   height: 20px;
   margin-bottom: 30px;
+
   @include vp-768 {
     grid-area: logo;
     width: 110px;
@@ -45,9 +46,6 @@
 .footer__nav {
   @include vp-768 {
     grid-area: menu;
-  }
-
-  @include vp-1366 {
   }
 }
 
@@ -67,9 +65,6 @@
   @include vp-1366 {
     gap: 20px 61px;
   }
-}
-
-.footer__nav-item {
 }
 
 .footer__nav-link {
@@ -123,9 +118,6 @@
   @include vp-1366 {
     gap: 15px 10px;
   }
-}
-
-.footer__social-item {
 }
 
 .footer__social-link {

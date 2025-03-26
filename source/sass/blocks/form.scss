@@ -7,7 +7,7 @@
 .form__main {
   background-color: $base-primary;
   color: $base-white;
-  padding: 70px 0px;
+  padding: 70px 0;
   font-family: $secondary-font;
 
   @include vp-768 {
@@ -90,15 +90,12 @@
   width: 100%;
 }
 
-.form__input--name {
-}
-
 .form__error {
   font-family: $primary-font;
   font-weight: 400;
   font-size: 14px;
   line-height: 157%;
-  color: $primary-error;
+  color: $primary-error-color;
   margin-top: 2px;
   display: none;
   margin-bottom: -24px;
@@ -108,9 +105,6 @@
   @include vp-768 {
     grid-area: phone;
   }
-}
-
-.form__input--phone {
 }
 
 .form__submit {

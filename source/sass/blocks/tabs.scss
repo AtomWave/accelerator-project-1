@@ -73,20 +73,10 @@
     }
   }
 
-  &.is-active {
-    pointer-events: none;
-    color: $base-primary;
-
-    &::after {
-      display: block;
-
-      @include vp-768 {
-      }
-    }
-  }
-
+  // Убраны дублирующиеся селекторы
   @include hover {
     color: $tabs-hover;
+
     &::after {
       display: block;
       background-color: $tabs-stroke-hover;
@@ -117,6 +107,7 @@
   @include disabled {
     color: $base-primary;
     opacity: 0.3;
+
     &::after {
       display: block;
       background-color: $base-primary;
@@ -125,7 +116,6 @@
   }
 
   // .tabs__control @media
-
   @include vp-768 {
     font-size: 18px;
     margin-right: 44px;
@@ -135,9 +125,6 @@
     font-size: 20px;
     margin-right: 51px;
   }
-}
-
-.tabs__content {
 }
 
 .tabs__element {

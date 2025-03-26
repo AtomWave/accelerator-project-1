@@ -1,7 +1,8 @@
 .subscription-card {
   font-family: $secondary-font;
   color: $base-primary;
-  padding: 44px 20px 44px;
+  padding: 44px 20px;
+
   // max-width: 347px;
   position: relative;
   display: flex;
@@ -28,6 +29,7 @@
 
   @include focus {
     outline: none;
+
     &::after {
       background: $card-gradient;
     }
@@ -35,7 +37,7 @@
 
   @include vp-768 {
     max-width: 380px;
-    padding: 58px 20px 58px;
+    padding: 58px 20px;
   }
 }
 
@@ -109,9 +111,6 @@
     @include vp-768 {
       margin-right: 14px;
     }
-
-    @include vp-1366 {
-    }
   }
 
   &::before {
@@ -130,9 +129,6 @@
       font-size: 100px;
       line-height: 150px;
     }
-
-    @include vp-1366 {
-    }
   }
 
   // .subscription-card__price @media
@@ -144,7 +140,4 @@
   @include vp-1366 {
     margin-bottom: 17px;
   }
-}
-
-.subscription-card__button {
 }

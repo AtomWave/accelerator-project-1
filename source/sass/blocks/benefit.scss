@@ -4,6 +4,7 @@
   dl {
     margin: 0;
     margin-bottom: 12px;
+
     @include vp-768 {
       margin: 0;
     }
@@ -15,7 +16,6 @@
     line-height: 100%;
     background: $features-gradient;
     background-clip: text;
-    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
     @include vp-768 {
@@ -101,6 +101,7 @@
 
   dl {
     margin-bottom: 20px;
+
     @include vp-768 {
       margin-bottom: 10px;
     }

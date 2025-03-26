@@ -119,7 +119,7 @@
     @include vp-1366 {
       font-size: 92px;
       line-height: 120%;
-      letter-spacing: 0.044em;
+      letter-spacing: 0.04em;
     }
   }
 
@@ -210,10 +210,4 @@
     display: block;
     flex-shrink: 0;
   }
-}
-
-.hero__image-source {
-}
-
-.hero__image-desktop {
 }

@@ -30,12 +30,10 @@
 
   @include focus {
     outline: 1px solid $additional-buttons;
+
     &::after {
       display: none;
     }
-  }
-
-  @include active {
   }
 
   @include disabled {
@@ -55,12 +53,10 @@
 
     @include focus {
       outline: 1px solid $base-white;
+
       &::after {
         display: none;
       }
-    }
-
-    @include active {
     }
 
     @include disabled {

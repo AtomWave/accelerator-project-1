@@ -60,7 +60,7 @@
 .field:not(:placeholder-shown):invalid,
 .field--invalid {
   color: $base-white;
-  border-bottom: 1px solid $primary-error;
+  border-bottom: 1px solid $primary-error-color;
 
   @include vp-768 {
     border-bottom-width: 2px;

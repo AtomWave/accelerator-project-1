@@ -14,9 +14,6 @@
   }
 }
 
-.features__container {
-}
-
 .features__title {
   font-family: $primary-font;
   font-weight: 600;
@@ -33,9 +30,6 @@
   @include vp-1366 {
     font-size: 54px;
   }
-}
-
-.features__content {
 }
 
 .features__list {

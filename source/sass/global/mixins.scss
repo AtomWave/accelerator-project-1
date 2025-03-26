@@ -56,7 +56,6 @@
   }
 }
 
-
 @mixin active {
   &:active,
   &.focus-visible:active {
@@ -66,12 +65,12 @@
 
 @mixin hover-focus {
   @media (hover: hover) {
-    &:hover:not(.focus-visible) {
+    &:hover:not(:focus-visible) {
       @content;
     }
   }
 
-  &.focus-visible:focus {
+  &:focus-visible {
     @content;
   }
 }
@@ -80,6 +79,7 @@
   &.disabled,
   &[disabled] {
     @content;
+
     pointer-events: none;
     cursor: not-allowed;
   }

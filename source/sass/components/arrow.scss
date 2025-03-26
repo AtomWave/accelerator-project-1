@@ -10,7 +10,6 @@
   overflow: hidden;
   color: $base-primary;
   box-shadow: none;
-  display: flex;
   align-items: center;
   justify-content: center;
   display: none;
@@ -47,7 +46,4 @@
   @include vp-768 {
     display: flex;
   }
-}
-
-.arrow--slider {
 }

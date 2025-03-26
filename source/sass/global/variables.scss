@@ -4,7 +4,8 @@
 $primary-font: "Alumni Sans", "Arial", sans-serif;
 $secondary-font: "Roboto Condensed", "Arial", sans-serif;
 
-//Основные цвета
+// Основные цвета
+
 $base-primary: #102654;
 $base-white: #ffffff;
 $base-white-lite: #b6bdcc;
@@ -15,14 +16,12 @@ $base-black: #000000;
 $additional-accent: #103aae;
 $additional-dark-accent: #102656;
 $price-shadow: #e8e8e8;
-$reviews-shadow:  0 0 40px 0 rgba(28, 51, 116, 0.2);;
-
+$reviews-shadow: 0 0 40px 0 rgba(28, 51, 116, 0.2);
 $coach-card-shadow: #2a3b63;
 $desc: #2e35ac;
 $divider: #74819c;
 $additional-gradient: linear-gradient(45deg, #d10a42, #0041ca);
 $features-gradient: linear-gradient(129deg, #d10a42 0%, #0041ca 60%);
-
 $hero-gradient: linear-gradient(
   90deg,
   #1c3477 0%,
@@ -32,7 +31,8 @@ $hero-gradient: linear-gradient(
   #b4022a 100%
 );
 
-//Цвет кнопок
+// Цвет кнопок
+
 $additional-buttons: #1c3374;
 $tabs-color: #d10a42;
 $tabs-hover: rgba(16, 38, 84, 0.7);
@@ -53,23 +53,29 @@ $stroke-play-btn-hover: rgba(16, 38, 84, 0.6);
 $stroke-disabled: rgba(16, 38, 84, 0.3);
 $stroke-play-btn-focus: #c8c9cc;
 
-//Фон
+// Фон
+
 $background-additional: #f8f9fc;
 $background-banners: #ed0233;
 $background-main-screen: linear-gradient(90deg, #003d85, #b80027);
 $background-footer: #030a1a;
 
 // Формы
-$primary-error: #ff121f;
+
+$primary-error-color: #ff121f;
 
 // Минимальная ширина страницы
-$minWidth: 320;
+
+$min-width: 320;
 
 // Брейкпоинты
+
 $mobile-width: 320px;
 $tablet-width: 768px;
 $desktop-width: 1366px;
 
 // Анимация
+
 $tr-default: 0.3s ease;
+
 // ---------------------------------

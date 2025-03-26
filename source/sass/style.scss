@@ -1,7 +1,8 @@
 // Vendor
 @import "vendor/normalize";
-@import "vendor/swiper-vars.scss";
+@import "vendor/swiper-vars";
 @import "vendor/swiper";
+
 // ---------------------------------
 
 // Global
@@ -12,12 +13,14 @@
 @import "./global/util";
 @import "./global/container";
 @import "./global/field";
+
 // ---------------------------------
 
 // Components
 @import "./components/button";
 @import "./components/btn";
 @import "./components/arrow";
+
 // ---------------------------------
 
 // Blocks
@@ -30,12 +33,13 @@
 @import "./blocks/features";
 @import "./blocks/benefit";
 @import "./blocks/offers";
-@import "./blocks/juri.scss";
+@import "./blocks/juri";
 @import "./blocks/coach-card";
 @import "./blocks/reviews";
 @import "./blocks/faq-section";
 @import "./blocks/faq-accordion";
 @import "./blocks/faq-tabs";
 @import "./blocks/form";
-@import "./blocks/footer.scss";
+@import "./blocks/footer";
+
 // ---------------------------------

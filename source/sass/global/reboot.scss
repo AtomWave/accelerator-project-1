@@ -8,7 +8,7 @@ body {
 }
 
 body {
-  min-width: $minWidth + px;
+  min-width: $min-width + px;
   font-family: $primary-font;
   overflow-y: scroll; /* Обязательно для работы scrollbar-width в Firefox */
   scrollbar-width: none; /* Скрытие полосы прокрутки в Firefox */
