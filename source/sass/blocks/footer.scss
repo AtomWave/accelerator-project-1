@@ -1,0 +1,157 @@
+.footer {
+  background-color: $background-footer;
+  padding: 40px 0;
+
+  @include vp-768 {
+    padding: 45px 0;
+  }
+
+  @include vp-1366 {
+    padding: 40px 0 36px;
+  }
+}
+
+.footer__container {
+  @include vp-768 {
+    display: grid;
+    grid-template-areas: "logo menu social";
+    gap: 24px;
+    grid-template-columns: 110px 1fr 105px;
+  }
+
+  @include vp-1366 {
+    grid-template-columns: 130px 1fr 95px;
+    gap: 156px;
+  }
+}
+
+.footer__logo {
+  width: 100px;
+  height: 20px;
+  margin-bottom: 30px;
+  @include vp-768 {
+    grid-area: logo;
+    width: 110px;
+    height: 22px;
+    margin-bottom: 0;
+  }
+
+  @include vp-1366 {
+    width: 130px;
+    height: 26px;
+  }
+}
+
+.footer__nav {
+  @include vp-768 {
+    grid-area: menu;
+  }
+
+  @include vp-1366 {
+  }
+}
+
+.footer__nav-list {
+  margin: 0 -11px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 14px;
+
+  @include vp-768 {
+    gap: 20px 9px;
+    margin: 0;
+    height: 100%;
+    align-items: center;
+  }
+
+  @include vp-1366 {
+    gap: 20px 61px;
+  }
+}
+
+.footer__nav-item {
+}
+
+.footer__nav-link {
+  font-family: $secondary-font;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-decoration: none;
+  color: $base-white;
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  outline: none;
+
+  @include hover {
+    text-decoration: 1px solid $base-white underline;
+    text-underline-offset: 8px;
+  }
+
+  @include focus {
+    border-color: transparent;
+    text-decoration: 1px solid $base-white underline;
+    text-underline-offset: 8px;
+  }
+
+  @include active {
+    border-color: transparent;
+    text-decoration: none;
+  }
+
+  @include disabled {
+    opacity: 0.4;
+  }
+}
+
+.footer__social {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  @include vp-768 {
+    grid-area: social;
+    margin: 0;
+    gap: 15px;
+  }
+
+  @include vp-1366 {
+    gap: 15px 10px;
+  }
+}
+
+.footer__social-item {
+}
+
+.footer__social-link {
+  background-color: $base-white;
+  color: $background-footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  outline: none;
+
+  @include hover {
+    color: $base-white;
+    background-color: $divider;
+  }
+
+  @include focus {
+    color: $base-white;
+    background-color: $additional-accent;
+  }
+
+  @include active {
+    color: $base-white;
+    background-color: $additional-dark-accent;
+  }
+
+  @include disabled {
+    color: $background-footer;
+    background-color: rgb($base-white, 0.3);
+  }
+}

@@ -124,6 +124,7 @@
   padding: 30px 25px 0;
   height: 328px;
   overflow-y: auto;
+  scrollbar-width: none;
 
   @include vp-768 {
     width: 500px;
@@ -152,6 +153,7 @@
 
 .reviews__text-wrapper {
   overflow-y: auto;
+  scrollbar-width: none;
 
   > *:last-child {
     padding-bottom: 30px;

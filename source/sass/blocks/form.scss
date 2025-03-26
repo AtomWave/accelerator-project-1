@@ -130,7 +130,7 @@
   font-family: $secondary-font;
 
   @include vp-768 {
-    padding: 60px 0 53px;
+    padding: 60px 0;
   }
 
   @include vp-1366 {

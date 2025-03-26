@@ -134,6 +134,13 @@
 
   @include vp-768 {
     margin: 0;
+    min-width: 678px;
+    min-height: 345px;
+  }
+
+  @include vp-1366 {
+    min-width: 660px;
+    min-height: 400px;
   }
 }
 

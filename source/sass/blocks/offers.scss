@@ -118,6 +118,7 @@
   padding: 0;
   border: none;
   margin-bottom: 40px;
+  background-color: $background-banners;
 
   @include vp-768 {
     display: flex;
@@ -127,10 +128,12 @@
     grid-area: 1/1/2/-1;
     margin-bottom: 0;
     flex-direction: row;
+    min-height: 462px;
   }
 
   @include vp-1366 {
     grid-area: 1/1/3/2;
+    min-height: 460px;
   }
 }
 
@@ -193,10 +196,12 @@
     text-align: left;
     align-items: start;
     padding: 40px 25px 35px;
+    width: 278px;
   }
 
   @include vp-1366 {
     padding: 40px 45px 35px;
+    width: 280px;
   }
 }
 
