@@ -76,7 +76,7 @@
   font-family: $secondary-font;
   font-size: 14px;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 143%;
   text-decoration: none;
   color: $base-white;
   padding: 5px 10px;
@@ -101,6 +101,10 @@
 
   @include disabled {
     opacity: 0.4;
+  }
+
+  @include vp-768 {
+    line-height: 157%;
   }
 }
 
