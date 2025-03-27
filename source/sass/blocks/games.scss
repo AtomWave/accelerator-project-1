@@ -51,7 +51,7 @@
 
   @include vp-1366 {
     gap: 78px;
-    margin-bottom: 30px;
+    margin-bottom: 29px;
   }
 }
 
@@ -65,10 +65,13 @@
   @include vp-1366 {
     font-size: 82px;
     line-height: 117%;
+    padding-top: 1px;
   }
 }
 
 .games__date-wrapper {
+  min-width: 56px;
+
   @include vp-768 {
     padding-top: 1px;
   }
@@ -149,7 +152,7 @@
   line-height: 100%;
   display: flex;
   margin: 0;
-  gap: 3px;
+  gap: 4px;
 
   p {
     display: flex;
@@ -202,6 +205,7 @@
 
   @include vp-1366 {
     margin-bottom: 30px;
+    padding-right: 0;
   }
 }
 
@@ -210,6 +214,10 @@
 
   @include vp-768 {
     padding: 27px;
+  }
+
+  @include vp-1366 {
+    padding: 28px 27px 26px;
   }
 }
 

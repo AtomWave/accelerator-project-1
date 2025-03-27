@@ -35,15 +35,16 @@
     background-color: $base-primary;
   }
 
-  @include disabled {
-    cursor: not-allowed;
-    pointer-events: none;
-    border-color: transparent;
-    background-color: transparent;
-    color: $stroke-disabled;
-  }
-
   @include vp-768 {
     display: flex;
   }
+}
+
+.arrow:disabled,
+.arrow.disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  border-color: transparent;
+  background-color: transparent;
+  color: $stroke-disabled;
 }

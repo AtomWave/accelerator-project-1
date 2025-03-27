@@ -1,7 +1,7 @@
-import Swiper from "swiper";
+import Swiper from 'swiper';
 
 function initCoachesSwiper() {
-  let coachesSwiper = new Swiper('.swiper-juri', {
+  const coachesSwiper = new Swiper('.swiper-juri', {
     direction: 'horizontal',
     slidesPerView: 1,
     loop: true,
@@ -13,16 +13,21 @@ function initCoachesSwiper() {
       1366: {
         slidesPerView: 4,
         spaceBetween: 40,
+        // Отключаем свайп на десктопе
+        touch: false,
+        simulateTouch: false,
+        mousewheel: false,
+        keyboard: false,
       },
     },
   });
 
-  // Добавьте обработчики клика
-  document.querySelectorAll('[data-swiper-juri-prev]').forEach(button => {
+  // Добавляем обработчики клика
+  document.querySelectorAll('[data-swiper-juri-prev]').forEach((button) => {
     button.addEventListener('click', () => coachesSwiper.slidePrev());
   });
 
-  document.querySelectorAll('[data-swiper-juri-next]').forEach(button => {
+  document.querySelectorAll('[data-swiper-juri-next]').forEach((button) => {
     button.addEventListener('click', () => coachesSwiper.slideNext());
   });
 

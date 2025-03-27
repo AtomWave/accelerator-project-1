@@ -1,6 +1,3 @@
-.faq-accordion {
-}
-
 .faq-accordion__list {
   border-top: solid 1px $divider;
 
@@ -57,40 +54,40 @@
     @include vp-1366 {
       font-size: 24px;
     }
+  }
 
-    &::before {
-      position: absolute;
-      content: "";
-      width: 30px;
-      height: 30px;
-      right: 0;
-      top: 50%;
-      transform: translateY(-50%);
-      background-color: transparent;
-      border-radius: 50%;
-      border: 1px solid $additional-buttons;
+  label::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid $additional-buttons;
 
-      @include vp-768 {
-        width: 40px;
-        height: 40px;
-      }
+    @include vp-768 {
+      width: 40px;
+      height: 40px;
     }
+  }
 
-    &::after {
-      position: absolute;
-      content: "";
-      right: 1px;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      width: 14px;
-      height: 14px;
-      background-image: url("../../__spritemap#sprite-plus-view");
+  label::after {
+    position: absolute;
+    content: "";
+    right: 1px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 14px;
+    height: 14px;
+    background-image: url("../../__spritemap#sprite-plus-view");
 
-      @include vp-768 {
-        width: 20px;
-        height: 20px;
-        right: 0;
-      }
+    @include vp-768 {
+      width: 20px;
+      height: 20px;
+      right: 0;
     }
   }
 }
@@ -107,6 +104,40 @@
     border: 0;
     clip: rect(0 0 0 0);
     overflow: hidden;
+  }
+
+  input:hover ~ label::before {
+    background-color: $additional-buttons;
+  }
+
+  input:hover ~ label::after {
+    background-image: url("../../__spritemap#sprite-minus-white-view");
+    background-repeat: no-repeat;
+    transform: translateX(-50%);
+  }
+
+  input:focus ~ label::before {
+    background-color: $divider;
+  }
+
+  input:active ~ label::before {
+    background-color: $additional-buttons;
+  }
+
+  // Checked состояние
+  input:checked ~ label::before {
+    background-color: $additional-buttons;
+  }
+
+  input:checked ~ label::after {
+    background-image: url("../../__spritemap#sprite-minus-white-view");
+    background-repeat: no-repeat;
+    transform: translateX(-50%);
+  }
+
+  input:disabled ~ label::before,
+  .disabled ~ label::before {
+    opacity: 0.3;
   }
 
   span {
@@ -158,50 +189,6 @@
     @include vp-1366 {
       margin-top: 23px;
     }
-  }
-}
-
-.faq-accordion__item input {
-  @include hover {
-    & ~ label::before {
-      background-color: $additional-buttons;
-    }
-
-    & ~ label::after {
-      background-image: url("../../__spritemap#sprite-minus-white-view");
-      background-repeat: no-repeat;
-      transform: translateX(-50%);
-    }
-  }
-
-  @include focus {
-    & ~ label::before {
-      background-color: $divider;
-    }
-  }
-
-  @include active {
-    & ~ label::before {
-      background-color: $additional-buttons;
-    }
-  }
-
-  @include disabled {
-    & ~ label::before {
-      opacity: 0.3;
-    }
-  }
-}
-
-.faq-accordion__item input:checked {
-  & ~ label::before {
-    background-color: $additional-buttons;
-  }
-
-  & ~ label::after {
-    background-image: url("../../__spritemap#sprite-minus-white-view");
-    background-repeat: no-repeat;
-    transform: translateX(-50%);
   }
 }
 

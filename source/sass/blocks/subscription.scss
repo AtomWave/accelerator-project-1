@@ -1,10 +1,10 @@
 .subscription {
-  padding: 40px 0 47px;
+  padding: 41px 0 47px;
   background-color: $background-additional;
   position: relative;
 
   @include vp-768 {
-    padding: 60px 0 67px;
+    padding: 61px 0 67px;
   }
 
   @include vp-1366 {
@@ -28,12 +28,13 @@
 
   @include vp-1366 {
     font-size: 54px;
+    letter-spacing: 0.03px;
     margin-bottom: 15px;
   }
 }
 
 .subscription__content {
-  padding-top: 35px;
+  padding-top: 36px;
   position: relative;
 
   &::after {
@@ -58,6 +59,8 @@
   }
 
   @include vp-1366 {
+    padding-top: 49px;
+
     &::after {
       background-image: url("../../img/barbell-plates.png");
       padding-top: 49px;

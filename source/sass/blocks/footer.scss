@@ -28,7 +28,7 @@
 .footer__logo {
   width: 100px;
   height: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 
   @include vp-768 {
     grid-area: logo;
@@ -94,17 +94,20 @@
     text-decoration: none;
   }
 
-  @include disabled {
-    opacity: 0.4;
-  }
-
   @include vp-768 {
     line-height: 157%;
   }
 }
 
+.footer__nav-link:disabled,
+.footer__nav-link.disabled {
+  opacity: 0.4;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
 .footer__social {
-  margin-top: 30px;
+  margin-top: 29px;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -145,9 +148,12 @@
     color: $base-white;
     background-color: $additional-dark-accent;
   }
+}
 
-  @include disabled {
-    color: $background-footer;
-    background-color: rgb($base-white, 0.3);
-  }
+.footer__social-link:disabled,
+.footer__social-link.disabled {
+  color: $background-footer;
+  background-color: rgb($base-white, 0.3);
+  pointer-events: none;
+  cursor: not-allowed;
 }

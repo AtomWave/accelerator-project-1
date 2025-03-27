@@ -1,7 +1,7 @@
 .subscription-card {
   font-family: $secondary-font;
   color: $base-primary;
-  padding: 44px 20px;
+  padding: 44px 20px 43px;
 
   // max-width: 347px;
   position: relative;
@@ -38,6 +38,10 @@
   @include vp-768 {
     max-width: 380px;
     padding: 58px 20px;
+  }
+
+  @include vp-1366 {
+    min-height: 433px;
   }
 }
 
@@ -111,6 +115,10 @@
     @include vp-768 {
       margin-right: 14px;
     }
+
+    @include vp-1366 {
+      margin-right: 15px;
+    }
   }
 
   &::before {
@@ -120,7 +128,7 @@
     font-size: 80px;
     line-height: 120px;
     opacity: 0.48;
-    bottom: -5px;
+    bottom: 1px;
     left: 50%;
     transform: translateX(-50%);
     color: $price-shadow;

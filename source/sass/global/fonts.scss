@@ -1,35 +1,10 @@
-
-// @include font-face("AlumniSans", 400, normal, url("../../fonts/AlumniSans.woff2"));
-// @include font-face("RobotoCondensed", 400, normal, url("../../fonts/RobotoCondensed.woff2"));
-
-// @font-face {
-//   font-style: normal;
-//   font-weight: 400;
-//   font-family: "Rouble";
-
-//   font-display: swap;
-//   src:
-//     url("../fonts/rouble.woff2") format("woff2");
-
-
-/* Normal (Regular) 400 */
-
-/* Medium 500 */
-
-/* Semi Bold (Demi Bold) 600 */
-
-/* Bold 700 */
-
-/* Extra Bold (Ultra Bold) 800 */
-
 @font-face {
   font-family: "Alumni Sans";
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src:
-    url("../../fonts/alumnisans-semibold.woff2") format("woff2"),
-    url("../../fonts/alumnisans-semibold.woff") format("woff");
+  src: url("../../fonts/AlumniSans-SemiBold.woff2") format("woff2"),
+    url("../../fonts/AlumniSans-SemiBold.woff") format("woff");
 }
 
 @font-face {
@@ -37,9 +12,8 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src:
-    url("../../fonts/alumnisans-bold.woff2") format("woff2"),
-    url("../../fonts/alumnisans-bold.woff") format("woff");
+  src: url("../../fonts/AlumniSans-Bold.woff2") format("woff2"),
+    url("../../fonts/AlumniSans-Bold.woff") format("woff");
 }
 
 @font-face {
@@ -47,20 +21,17 @@
   font-style: normal;
   font-weight: 800;
   font-display: swap;
-  src:
-    url("../../fonts/alumnisans-extrabold.woff2") format("woff2"),
-    url("../../fonts/alumnisans-extrabold.woff") format("woff");
+  src: url("../../fonts/AlumniSans-ExtraBold.woff2") format("woff2"),
+    url("../../fonts/AlumniSans-SemiBold.woff") format("woff");
 }
-
 
 @font-face {
   font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src:
-    url("../../fonts/robotocondensed-light.woff2") format("woff2"),
-    url("../../fonts/robotocondensed-light.woff") format("woff");
+  src: url("../../fonts/RobotoCondensed-Light.woff2") format("woff2"),
+    url("../../fonts/RobotoCondensed-Light.woff") format("woff");
 }
 
 @font-face {
@@ -68,9 +39,8 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src:
-    url("../../fonts/robotocondensed-regular.woff2") format("woff2"),
-    url("../../fonts/robotocondensed-regular.woff") format("woff");
+  src: url("../../fonts/RobotoCondensed-Regular.woff2") format("woff2"),
+    url("../../fonts/RobotoCondensed-Regular.woff") format("woff");
 }
 
 @font-face {
@@ -78,8 +48,6 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src:
-    url("../../fonts/robotocondensed-bold.woff2") format("woff2"),
-    url("../../fonts/robotocondensed-bold.woff") format("woff");
+  src: url("../../fonts/RobotoCondensed-Bold.woff2") format("woff2"),
+    url("../../fonts/RobotoCondensed-Bold.woff") format("woff");
 }
-

@@ -1,12 +1,12 @@
 .features {
-  padding: 40px 0;
+  padding: 41px 0 40px;
   background-color: $background-additional;
   font-family: $secondary-font;
   color: $base-primary;
   text-align: center;
 
   @include vp-768 {
-    padding: 60px 0;
+    padding: 61px 0 60px;
   }
 
   @include vp-1366 {
@@ -24,11 +24,12 @@
 
   @include vp-768 {
     font-size: 42px;
-    margin-bottom: 50px;
+    margin-bottom: 49px;
   }
 
   @include vp-1366 {
     font-size: 54px;
+    margin-bottom: 50px;
   }
 }
 
@@ -41,13 +42,13 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-flow: dense;
-    row-gap: 40px;
+    row-gap: 39px;
     column-gap: 30px;
   }
 
   @include vp-1366 {
     grid-template-columns: repeat(3, 1fr);
-    row-gap: 80px;
+    row-gap: 79px;
     column-gap: 40px;
   }
 }

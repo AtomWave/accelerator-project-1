@@ -1,14 +1,14 @@
 .about {
-  padding: 40px 0;
+  padding: 41px 0 40px;
 
   @include vp-768 {
-    padding: 60px 0 35px;
+    padding: 61px 0 0;
   }
 
   @include vp-1366 {
     display: flex;
     max-width: 1366px;
-    padding: 120px 103px 207px;
+    padding: 120px 103px 181px;
     margin: 0 auto;
     gap: 145px;
   }
@@ -22,14 +22,16 @@
 }
 
 .about__text-wrapper {
-  padding-bottom: 36px;
+  margin-bottom: 35px;
 
   @include vp-768 {
     text-align: center;
+    margin-bottom: 36px;
   }
 
   @include vp-1366 {
     text-align: left;
+    margin-bottom: 0;
   }
 }
 
@@ -43,12 +45,12 @@
 
   @include vp-768 {
     font-size: 42px;
-    margin-bottom: 20px;
+    margin-bottom: 19px;
   }
 
   @include vp-1366 {
     font-size: 54px;
-    margin-bottom: 25px;
+    margin-bottom: 26px;
   }
 }
 
@@ -68,7 +70,7 @@
 
   @include vp-1366 {
     font-size: 22px;
-    margin-bottom: 95px;
+    margin-bottom: 94px;
   }
 }
 
@@ -85,6 +87,10 @@
 
   p:not(:last-child) {
     margin-bottom: 9px;
+
+    @include vp-1366 {
+      margin-bottom: 8px;
+    }
   }
 
   @include vp-768 {
@@ -162,7 +168,7 @@
   }
 
   @include vp-1366 {
-    bottom: -82px;
+    bottom: -115px;
     left: -100px;
   }
 }
@@ -185,8 +191,16 @@
   color: $base-white;
 
   svg {
-    width: 12px;
+    width: 9px;
     height: 12px;
+    margin-left: 2px;
+
+    @include vp-1366 {
+      width: 13px;
+      height: 15px;
+      margin-left: 4px;
+      margin-bottom: 2px;
+    }
   }
 
   @include hover {
@@ -206,14 +220,16 @@
     color: $base-primary;
     outline-color: $base-primary;
   }
+}
 
-  @include disabled {
-    opacity: 0.4;
-    background: $base-white;
-    color: $base-primary;
-    outline-color: $base-primary;
-    cursor: not-allowed;
-  }
+.about__play-button:disabled,
+.about__play-button.disabled {
+  opacity: 0.4;
+  background: $base-white;
+  color: $base-primary;
+  outline-color: $base-primary;
+  cursor: not-allowed;
+  pointer-events: none;
 }
 
 .about__iframe-wrapper {

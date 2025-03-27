@@ -1,4 +1,4 @@
-import Swiper from "swiper";
+import Swiper from 'swiper';
 
 function initReviewsSwiper() {
   let reviewsSwiper;
@@ -12,6 +12,14 @@ function initReviewsSwiper() {
       navigation: {
         nextEl: '[data-swiper-reviews-next]',
         prevEl: '[data-swiper-reviews-prev]',
+      },
+      breakpoints: {
+        1366: { // Для десктопа (≥1366px)
+          touch: false,
+          simulateTouch: false,
+          mousewheel: false,
+          keyboard: false,
+        }
       },
       on: {
         init: function () {
@@ -27,11 +35,15 @@ function initReviewsSwiper() {
     const nextButton = document.querySelector('[data-swiper-reviews-next]');
 
     prevButton.addEventListener('click', () => {
-      if (reviewsSwiper) reviewsSwiper.slidePrev();
+      if (reviewsSwiper) {
+        reviewsSwiper.slidePrev();
+      }
     });
 
     nextButton.addEventListener('click', () => {
-      if (reviewsSwiper) reviewsSwiper.slideNext();
+      if (reviewsSwiper) {
+        reviewsSwiper.slideNext();
+      }
     });
   });
 

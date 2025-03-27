@@ -1,5 +1,5 @@
 .faq-section {
-  padding: 70px 0;
+  padding: 71px 0 70px;
   background-color: $background-additional;
 
   @include vp-768 {
@@ -13,7 +13,7 @@
 
 .faq-section__title {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 34px;
   font-weight: 600;
   font-size: 32px;
   line-height: 100%;
@@ -29,6 +29,6 @@
     grid-area: title;
     text-align: left;
     font-size: 54px;
-    margin-bottom: 50px;
+    margin-bottom: 49px;
   }
 }

@@ -104,17 +104,6 @@
     }
   }
 
-  @include disabled {
-    color: $base-primary;
-    opacity: 0.3;
-
-    &::after {
-      display: block;
-      background-color: $base-primary;
-      opacity: 0.3;
-    }
-  }
-
   // .tabs__control @media
   @include vp-768 {
     font-size: 18px;
@@ -127,13 +116,27 @@
   }
 }
 
+.tabs__control:disabled,
+.tabs__control.disabled {
+  color: $base-primary;
+  opacity: 0.3;
+  pointer-events: none;
+  cursor: not-allowed;
+
+  &::after {
+    display: block;
+    background-color: $base-primary;
+    opacity: 0.3;
+  }
+}
+
 .tabs__element {
   display: none;
+}
 
-  &.is-active {
-    width: 100%;
-    display: block;
-    position: relative;
-    z-index: 5;
-  }
+.tabs__element.is-active {
+  width: 100%;
+  display: block;
+  position: relative;
+  z-index: 5;
 }

@@ -5,9 +5,10 @@
 }
 
 .form__main {
+  width: 100%;
   background-color: $base-primary;
   color: $base-white;
-  padding: 70px 0;
+  padding: 71px 0 70px;
   font-family: $secondary-font;
 
   @include vp-768 {
@@ -61,7 +62,7 @@
 
 .form__field {
   display: block;
-  margin-bottom: 29px;
+  margin-bottom: 30px;
 
   &:nth-last-child(2) {
     margin-bottom: 36px;
@@ -119,16 +120,18 @@
 }
 
 .form__contacts {
+  width: 100%;
   padding: 37px 0 39px;
   color: $base-primary;
   font-family: $secondary-font;
 
   @include vp-768 {
-    padding: 60px 0;
+    padding: 60px 0 59px;
   }
 
   @include vp-1366 {
     border-top: 1px solid $divider;
+    padding: 59px 0;
   }
 }
 
@@ -150,6 +153,7 @@
   @include vp-768 {
     font-size: 54px;
     text-align: center;
+    margin-bottom: 36px;
   }
 
   @include vp-1366 {
@@ -159,7 +163,7 @@
 
 .form__contacts-list {
   display: grid;
-  gap: 28px;
+  gap: 27px;
 
   &::before {
     @include vp-768 {
@@ -183,7 +187,7 @@
     grid-template-rows: 1fr 1fr;
     grid-auto-flow: column;
     column-gap: 60px;
-    row-gap: 15px;
+    row-gap: 14px;
     width: 440px;
     margin: 0 auto;
     position: relative;
@@ -211,7 +215,7 @@
 
   @include vp-768 {
     font-size: 24px;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
   }
 }
 
@@ -224,7 +228,6 @@
 
   @include vp-768 {
     line-height: 157%;
-    margin-top: 5px;
   }
 }
 
@@ -250,8 +253,11 @@
     text-decoration: underline;
     text-underline-offset: 4px;
   }
+}
 
-  @include disabled {
-    opacity: 0.2;
-  }
+.form__contacts-link:disabled,
+.form__contacts-link.disabled {
+  opacity: 0.2;
+  pointer-events: none;
+  cursor: not-allowed;
 }

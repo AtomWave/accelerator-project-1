@@ -134,7 +134,7 @@
 
     @include vp-768 {
       font-size: 42px;
-      padding-top: 31px;
+      padding-top: 32px;
       margin-bottom: 10px;
     }
 
@@ -176,7 +176,7 @@
 
   // .hero__description
   @include vp-768 {
-    column-gap: 26px;
+    column-gap: 27px;
     grid-template-rows: repeat(3, min-content);
   }
 
@@ -193,7 +193,7 @@
   margin-top: 48px;
 
   @include vp-768 {
-    margin-top: 50px;
+    margin-top: 49px;
     grid-column: 2 / -1;
   }
 

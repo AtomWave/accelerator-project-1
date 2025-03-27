@@ -1,67 +1,140 @@
-.btn {
-  position: relative;
+.button {
+  padding: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  font-family: $secondary-font;
+  font-style: normal;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 100%;
   text-transform: uppercase;
-  color: $additional-buttons;
-  padding: 10px;
-  align-self: flex-start;
+  background-color: transparent;
+  color: $base-white;
+  border: none;
+  box-shadow: none;
+  appearance: none;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  z-index: 1;
 
   &::after {
+    width: 100%;
+    height: 100%;
     display: block;
-    width: calc(100% - 20px);
-    height: 1px;
     position: absolute;
     content: "";
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 5px;
-    background-color: $additional-buttons;
+    top: 0;
+    left: 0;
+    border: 2px solid $base-white;
+    z-index: -1;
   }
 
   @include hover {
-    opacity: 0.8;
+    background-color: $base-white;
+    color: $additional-accent;
+  }
+
+  @include focus {
+    background-color: $base-white-opacity;
+    color: $additional-accent;
+    outline: none;
+    outline-offset: 0;
 
     &::after {
-      opacity: 0.8;
+      border-color: $base-black;
+    }
+  }
+
+  @include active {
+    background-color: $base-white;
+    color: $base-primary;
+    outline: none;
+  }
+
+  // .button @media
+  @include vp-768 {
+    padding: 22px;
+  }
+
+  @include vp-1366 {
+    padding: 27px;
+  }
+}
+
+.button:disabled,
+.button.disabled {
+  opacity: 0.7;
+  background: transparent;
+  color: $base-white;
+  cursor: not-allowed;
+
+  &::after {
+    border-color: $base-white;
+  }
+}
+
+.button--secondary {
+  width: 206px;
+  color: $base-primary;
+  padding: 27px;
+
+  &::after {
+    border-color: $base-primary;
+  }
+
+  @include hover {
+    background: $button-gradient;
+    color: $base-white;
+
+    &::after {
+      border-color: transparent;
     }
   }
 
   @include focus {
-    outline: 1px solid $additional-buttons;
-
-    &::after {
-      display: none;
-    }
-  }
-
-  @include disabled {
-    opacity: 0.3;
-  }
-
-  &--special {
+    outline: none;
+    outline-offset: 0;
     color: $base-white;
+    background: $button-gradient-focus;
 
     &::after {
-      background-color: $base-white;
+      border-color: $base-black;
     }
+  }
 
-    @include vp-768 {
-      margin: 0;
+  @include active {
+    outline: none;
+    background: $button-gradient;
+    color: $base-white-opacity-7;
+
+    &::after {
+      border-color: transparent;
     }
+  }
 
-    @include focus {
-      outline: 1px solid $base-white;
+  // .button--secondary @media
+  @include vp-768 {
+    padding: 27px;
+    width: 250px;
+  }
 
-      &::after {
-        display: none;
-      }
-    }
+  @include vp-1366 {
+    width: 230px;
+  }
+}
 
-    @include disabled {
-      opacity: 0.3;
-      cursor: not-allowed;
-    }
+.button--secondary:disabled,
+.button--secondary.disabled {
+  opacity: 0.3;
+  background: transparent;
+  color: $base-primary;
+  pointer-events: none;
+  cursor: not-allowed;
+
+  &::after {
+    border-color: $base-primary;
   }
 }

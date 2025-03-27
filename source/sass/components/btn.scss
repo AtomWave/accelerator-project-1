@@ -35,33 +35,38 @@
       display: none;
     }
   }
+}
 
-  @include disabled {
-    opacity: 0.3;
+.btn:disabled,
+.btn.disabled {
+  opacity: 0.3;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.btn--special {
+  color: $base-white;
+
+  &::after {
+    background-color: $base-white;
   }
 
-  &--special {
-    color: $base-white;
+  @include vp-768 {
+    margin: 0;
+  }
+
+  @include focus {
+    outline: 1px solid $base-white;
 
     &::after {
-      background-color: $base-white;
-    }
-
-    @include vp-768 {
-      margin: 0;
-    }
-
-    @include focus {
-      outline: 1px solid $base-white;
-
-      &::after {
-        display: none;
-      }
-    }
-
-    @include disabled {
-      opacity: 0.3;
-      cursor: not-allowed;
+      display: none;
     }
   }
+}
+
+.btn--special:disabled,
+.btn--special.disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+  pointer-events: none;
 }

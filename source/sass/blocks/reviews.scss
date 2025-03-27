@@ -1,5 +1,5 @@
 .reviews {
-  padding: 40px 0;
+  padding: 41px 0 40px;
 
   @include vp-768 {
     padding: 60px 0;
@@ -17,7 +17,7 @@
   color: $base-primary;
   text-align: center;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 
   @include vp-768 {
     font-weight: 600;
@@ -157,6 +157,10 @@
     font-size: 22px;
     line-height: 100%;
     margin-bottom: 20px;
+  }
+
+  @include vp-1366 {
+    margin: 1px 0 19px;
   }
 }
 

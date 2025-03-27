@@ -18,8 +18,8 @@ export function initFaq() {
     const tabId = tabButton.dataset.tabId;
 
     // Деактивируем все табы и скрываем контент
-    tabControls.querySelectorAll('[data-faq-tabs="control"]').forEach(btn => btn.classList.remove('tab-button--active'));
-    accordionWrappers.forEach(wrapper => wrapper.classList.add('faq-accordion--hidden'));
+    tabControls.querySelectorAll('[data-faq-tabs="control"]').forEach((btn) => btn.classList.remove('tab-button--active'));
+    accordionWrappers.forEach((wrapper) => wrapper.classList.add('faq-accordion--hidden'));
 
     // Активируем выбранный таб и показываем соответствующий контент
     tabButton.classList.add('tab-button--active');
@@ -30,7 +30,7 @@ export function initFaq() {
   };
 
   // Привязываем обработчики событий к кнопкам табов
-  tabControls.querySelectorAll('[data-faq-tabs="control"]').forEach(tabButton => {
+  tabControls.querySelectorAll('[data-faq-tabs="control"]').forEach((tabButton) => {
     tabButton.addEventListener('click', () => {
       handleTabSwitch(tabButton);
     });
