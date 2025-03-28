@@ -1,7 +1,7 @@
 // faq.js
 
 /**
- * Инициализирует функциональность FAQ-секции: переключение табов и сохранение состояния аккордеонов.
+ * Инициализирует функциональность FAQ-секции: переключение табов и раскрытие первого аккордеона.
  */
 export function initFaq() {
   const faqSection = document.querySelector('[data-test="faq"]');
@@ -27,6 +27,13 @@ export function initFaq() {
 
     // Сохраняем ID активного таба в localStorage
     localStorage.setItem('activeFaqTab', tabId);
+
+    // Раскрываем первый аккордеон в текущем табе
+    const currentTabContent = faqSection.querySelector(`[data-tab-content="${tabId}"]`);
+    const firstAccordionItemInput = currentTabContent.querySelector('.faq-accordion__list .faq-accordion__item input[type="checkbox"]:first-child');
+    if (firstAccordionItemInput) {
+      firstAccordionItemInput.checked = true;
+    }
   };
 
   // Привязываем обработчики событий к кнопкам табов
@@ -38,16 +45,16 @@ export function initFaq() {
 
   // Восстанавливаем состояние табов из localStorage при загрузке страницы
   const activeTabId = localStorage.getItem('activeFaqTab');
+  const firstTabButton = tabControls.querySelector('[data-faq-tabs="control"]');
+
   if (activeTabId) {
     const activeTabButton = tabControls.querySelector(`[data-tab-id="${activeTabId}"]`);
     if (activeTabButton) {
       handleTabSwitch(activeTabButton);
-    }
-  } else {
-    // Если в localStorage нет данных, активируем первый таб
-    const firstTabButton = tabControls.querySelector('[data-faq-tabs="control"]');
-    if (firstTabButton) {
+    } else {
       handleTabSwitch(firstTabButton);
     }
+  } else {
+    handleTabSwitch(firstTabButton);
   }
 }

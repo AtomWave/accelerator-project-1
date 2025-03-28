@@ -16,7 +16,7 @@
 }
 
 .hero__header {
-  padding: 16px 0;
+  padding: 15px 0 17px;
 
   @include vp-768 {
     padding: 30px 0;
@@ -33,17 +33,20 @@
   display: block;
   transition: $tr-default;
   transition-property: filter;
-  width: 100px;
-  height: 20px;
 
-  @include vp-768 {
-    width: 110px;
-    height: 22px;
-  }
+  img {
+    width: 100px;
+    height: 20px;
 
-  @include vp-1366 {
-    width: 130px;
-    height: 26px;
+    @include vp-768 {
+      width: 110px;
+      height: 22px;
+    }
+
+    @include vp-1366 {
+      width: 130px;
+      height: 26px;
+    }
   }
 }
 
@@ -74,7 +77,7 @@
 }
 
 .hero__content {
-  padding: 48px 0 32px;
+  padding: 49px 0 32px;
 
   @include vp-768 {
     padding: 0 0 100px;
@@ -117,6 +120,7 @@
     @include vp-768 {
       font-size: 72px;
       line-height: 118%;
+      letter-spacing: 0.03em;
     }
 
     @include vp-1366 {
@@ -178,8 +182,8 @@
 
   // .hero__description
   @include vp-768 {
-    column-gap: 27px;
-    grid-template-columns: 113px 170px;
+    column-gap: 26px;
+    grid-template-columns: 113px 185px;
     grid-template-rows: repeat(3, min-content);
   }
 
@@ -193,7 +197,7 @@
 .hero__button {
   grid-column: 1/-1;
   width: 100%;
-  margin-top: 48px;
+  margin-top: 47px;
 
   @include vp-768 {
     margin-top: 49px;

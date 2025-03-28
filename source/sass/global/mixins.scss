@@ -1,25 +1,7 @@
 // Mobile first
 
-@mixin vp-320 {
-  @media (min-width: $mobile-width) {
-    @content;
-  }
-}
-
-@mixin vp-767 {
-  @media (max-width: ($tablet-width - 1px)) {
-    @content;
-  }
-}
-
 @mixin vp-768 {
   @media (min-width: $tablet-width) {
-    @content;
-  }
-}
-
-@mixin vp-1365 {
-  @media (max-width: ($desktop-width - 1px)) {
     @content;
   }
 }
