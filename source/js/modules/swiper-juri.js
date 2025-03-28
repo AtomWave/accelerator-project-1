@@ -4,6 +4,7 @@ function initCoachesSwiper() {
   const coachesSwiper = new Swiper('.swiper-juri', {
     direction: 'horizontal',
     slidesPerView: 1,
+    spaceBetween: 0,
     loop: true,
     breakpoints: {
       768: {
