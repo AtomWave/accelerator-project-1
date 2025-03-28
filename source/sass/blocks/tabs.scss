@@ -73,7 +73,6 @@
     }
   }
 
-  // Убраны дублирующиеся селекторы
   @include hover {
     color: $tabs-hover;
 
@@ -113,6 +112,12 @@
   @include vp-1366 {
     font-size: 20px;
     margin-right: 51px;
+  }
+}
+
+.tabs__control.is-active {
+  &::after {
+    display: block;
   }
 }
 
