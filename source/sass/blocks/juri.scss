@@ -30,6 +30,10 @@
 .juri__slider {
   position: relative;
   padding: 0 15px;
+
+  @include vp-768 {
+    padding: 0;
+  }
 }
 
 .juri__button-prev {
