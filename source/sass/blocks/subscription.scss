@@ -1,14 +1,14 @@
 .subscription {
-  padding: 41px 0 47px;
+  padding: 41px 0 40px;
   background-color: $background-additional;
   position: relative;
 
   @include vp-768 {
-    padding: 61px 0 67px;
+    padding: 61px 0 60px;
   }
 
   @include vp-1366 {
-    padding: 100px 0 107px;
+    padding: 100px 0;
   }
 }
 
@@ -34,7 +34,7 @@
 }
 
 .subscription__content {
-  padding-top: 36px;
+  padding-top: 29px;
   position: relative;
 
   &::after {
@@ -50,31 +50,30 @@
   }
 
   @include vp-768 {
-    padding-top: 52px;
+    padding-top: 45px;
     width: 100%;
 
     &::after {
       display: block;
+      bottom: -48px;
     }
   }
 
   @include vp-1366 {
-    padding-top: 49px;
+    padding-top: 42px;
 
     &::after {
       background-image: url("../../img/barbell-plates.png");
       padding-top: 49px;
       width: 321px;
       height: 384px;
-      bottom: -100px;
+      bottom: -92px;
       right: -195px;
     }
   }
 }
 
 .subscription__items {
-  padding: 0 7px;
-
   @include vp-768 {
     margin: 0 auto;
     max-width: 380px;
@@ -83,10 +82,9 @@
   @include vp-1366 {
     display: flex;
     justify-content: center;
-    gap: 54px;
+    flex-wrap: wrap;
+    gap: 40px;
     margin: 0;
-
-    // padding: 0;
     max-width: 100%;
   }
 }
@@ -98,10 +96,10 @@
 }
 
 .subscription__item:not(:last-child) {
-  margin-bottom: 49px;
+  margin-bottom: 35px;
 
   @include vp-768 {
-    margin-bottom: 54px;
+    margin-bottom: 40px;
   }
 
   @include vp-1366 {

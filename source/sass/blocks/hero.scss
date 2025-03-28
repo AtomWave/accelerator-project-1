@@ -54,14 +54,17 @@
   line-height: 100%;
   color: $base-white;
   z-index: 99;
+  max-width: 160px;
 
   @include vp-768 {
     font-size: 24px;
+    max-width: 170px;
   }
 
   @include vp-1366 {
     font-size: 26px;
     margin-top: 2px;
+    max-width: 180px;
   }
 
   @include focus {
@@ -96,7 +99,7 @@
 
 .hero__description {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 113px 156px;
   grid-template-rows: 1fr auto;
   column-gap: 21px;
 
@@ -167,7 +170,6 @@
     font-size: 14px;
     line-height: 143%;
     text-align: right;
-    white-space: nowrap;
 
     @include vp-768 {
       line-height: 157%;
@@ -177,6 +179,7 @@
   // .hero__description
   @include vp-768 {
     column-gap: 27px;
+    grid-template-columns: 113px 170px;
     grid-template-rows: repeat(3, min-content);
   }
 
