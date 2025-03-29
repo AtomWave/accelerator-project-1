@@ -136,19 +136,19 @@
     line-height: 100%;
     grid-column: 2/3;
     margin: 0;
-    margin-bottom: 14px;
+    padding-bottom: 14px;
     justify-self: end;
 
     @include vp-768 {
       font-size: 42px;
       padding-top: 32px;
-      margin-bottom: 10px;
+      padding-bottom: 10px;
     }
 
     @include vp-1366 {
       font-size: 54px;
       padding-top: 52px;
-      margin-bottom: 41px;
+      padding-bottom: 41px;
     }
   }
 
