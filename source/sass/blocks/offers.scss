@@ -1,8 +1,8 @@
 .offers {
-  padding: 40px 0;
+  padding: 41px 0 40px;
 
   @include vp-768 {
-    padding: 60px 0;
+    padding: 61px 0 60px;
   }
 
   @include vp-1366 {

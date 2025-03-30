@@ -29,27 +29,6 @@
   align-items: center;
 }
 
-.hero__logo {
-  display: block;
-  transition: $tr-default;
-  transition-property: filter;
-
-  img {
-    width: 100px;
-    height: 20px;
-
-    @include vp-768 {
-      width: 110px;
-      height: 22px;
-    }
-
-    @include vp-1366 {
-      width: 130px;
-      height: 26px;
-    }
-  }
-}
-
 .hero__link {
   font-family: $secondary-font;
   font-weight: 700;
@@ -70,10 +49,26 @@
     max-width: 180px;
   }
 
+  @include hover {
+    color: rgba($additional-buttons, 0.5);
+  }
+
   @include focus {
-    opacity: 0.8;
+    color: $additional-buttons;
     outline: none;
   }
+
+  @include active {
+    color: $base-primary;
+    text-underline-offset: 7px;
+    text-decoration: underline solid 1px;
+  }
+}
+
+.hero__link.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: not-allowed;
 }
 
 .hero__content {
@@ -121,12 +116,14 @@
       font-size: 72px;
       line-height: 118%;
       letter-spacing: 0.03em;
+      margin-right: -2px;
     }
 
     @include vp-1366 {
       font-size: 92px;
       line-height: 120%;
       letter-spacing: 0.04em;
+      margin-right: 0;
     }
   }
 
@@ -161,6 +158,7 @@
     @include vp-768 {
       align-self: center;
       padding-top: 34px;
+      min-width: 113px;
     }
 
     @include vp-1366 {
