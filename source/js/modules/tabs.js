@@ -12,7 +12,6 @@ const initTabs = () => {
     return;
   }
 
-  // Проверяем, есть ли активный таб
   let activeTabFound = false;
   tabsControls.forEach((control) => {
     if (control.classList.contains('is-active')) {
@@ -20,7 +19,6 @@ const initTabs = () => {
     }
   });
 
-  // Если нет активного таба, активируем первый
   if (!activeTabFound && tabsControls.length > 0 && tabsElements.length > 0) {
     tabsControls[0].classList.add('is-active');
     tabsElements[0].classList.add('is-active');

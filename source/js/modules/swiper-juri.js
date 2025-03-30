@@ -23,7 +23,6 @@ function initCoachesSwiper() {
     },
   });
 
-  // Добавляем обработчики клика
   document.querySelectorAll('[data-swiper-juri-prev]').forEach((button) => {
     button.addEventListener('click', () => coachesSwiper.slidePrev());
   });

@@ -14,7 +14,7 @@ function initReviewsSwiper() {
         prevEl: '[data-swiper-reviews-prev]',
       },
       breakpoints: {
-        1366: { // Для десктопа (≥1366px)
+        1366: {
           touch: false,
           simulateTouch: false,
           mousewheel: false,
